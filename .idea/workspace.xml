@@ -19,9 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/style.css" afterDir="false" />
+    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="add: 作業用テーマSNS-sample追加">
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/footer.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/header.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,8 +61,16 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1604541035995</updated>
-      <workItem from="1604541037944" duration="1140000" />
+      <workItem from="1604541037944" duration="1922000" />
     </task>
+    <task id="LOCAL-00001" summary="add: 作業用テーマSNS-sample追加">
+      <created>1604554636250</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604554636250</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -77,10 +87,18 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add: 作業用テーマSNS-sample追加" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: 作業用テーマSNS-sample追加" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="465" y="196" key="FileChooserDialogImpl" timestamp="1604554570733">
       <screen x="0" y="0" width="1368" height="882" />
     </state>
     <state x="465" y="196" key="FileChooserDialogImpl/0.0.1368.882@0.0.1368.882" timestamp="1604554570733" />
+    <state x="521" y="365" key="NewPhpFileDialog" timestamp="1604555327461">
+      <screen x="0" y="0" width="1368" height="882" />
+    </state>
+    <state x="521" y="365" key="NewPhpFileDialog/0.0.1368.882@0.0.1368.882" timestamp="1604555327461" />
   </component>
 </project>
