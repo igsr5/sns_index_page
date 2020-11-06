@@ -1,11 +1,35 @@
+html{
+    font-size: 10px;
+}
+
+p,a,div,ul,li,input,.form-control,.btn{
+    font-size: 16px;
+}
+
+ul{
+    padding: 0;
+    list-style: none;
+}
+
 .head{
-    margin-top: 15px;
+    border-bottom: 1px solid #000000;
 }
 
 .user-name{
-    font-size: 40px;
+    font-size: 5rem;
 }
 
-.user-search{
-    margin-top: 10px;
+.sns-name{
+    font-size: 3rem;
+}
+
+.posts{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.posts>li{
+    width: 210px;
+    height: 210px;
 }
