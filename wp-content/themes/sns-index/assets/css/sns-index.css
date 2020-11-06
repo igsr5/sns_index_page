@@ -1,4 +1,11 @@
-.user-name{
+.head{
     margin-top: 15px;
+}
+
+.user-name{
     font-size: 40px;
+}
+
+.user-search{
+    margin-top: 10px;
 }
