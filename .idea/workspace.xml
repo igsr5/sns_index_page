@@ -19,11 +19,11 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="add: index.php にツイッター投稿を取得できるコードを記述、oAUTHの用意">
-      <change afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/page.php" afterDir="false" />
+    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="update: bootstrap4を導入">
+      <change afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/assets/css/sns-index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/footer.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/footer.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/header.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/header.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/page.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,6 +61,7 @@
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\xampp\htdocs\sns_index_page\wp-content\themes\sns-index" />
+      <recent name="C:\xampp\htdocs\sns_index_page\wp-content\themes\sns-index\page" />
     </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -72,7 +73,7 @@
       <option name="presentableId" value="Default" />
       <updated>1604541035995</updated>
       <workItem from="1604541037944" duration="2562000" />
-      <workItem from="1604641895299" duration="578000" />
+      <workItem from="1604641895299" duration="1674000" />
     </task>
     <task id="LOCAL-00001" summary="add: 作業用テーマSNS-sample追加">
       <created>1604554636250</created>
@@ -88,7 +89,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604555463778</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="update: bootstrap4を導入">
+      <created>1604642502270</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1604642502271</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +117,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add: 作業用テーマSNS-sample追加" />
     <MESSAGE value="add: header.php,footer.phpを追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: header.php,footer.phpを追加" />
+    <MESSAGE value="update: bootstrap4を導入" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: bootstrap4を導入" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1162" y="-847" key="FileChooserDialogImpl" timestamp="1604577079961">
