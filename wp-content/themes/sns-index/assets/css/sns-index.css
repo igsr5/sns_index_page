@@ -1,0 +1,58 @@
+html {
+    font-size: 10px;
+}
+
+p, a, div, ul, li, input, .form-control, .btn {
+    font-size: 16px;
+    margin: 0;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+.head {
+    border-bottom: 1px solid #000000;
+}
+
+.user-name {
+    font-size: 5rem;
+}
+
+.sns-name {
+    font-size: 3rem;
+}
+
+.posts {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.posts > li {
+    width: 24%;
+    height: 300px;
+    position: relative;
+}
+
+.posts  article {
+    padding: 10px;
+}
+
+.text{
+    color: #000000;
+}
+
+.created_at {
+    font-size: 14px;
+    color: #8f8f8f;
+    text-align: right;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.post_photo{
+    width: 100%;
+}
