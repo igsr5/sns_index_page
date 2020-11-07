@@ -1,13 +1,14 @@
 <?php get_header(); ?>
 
 <?php
-$array=[1, 2, 3, 4, 5];
+require 'Twitter.php';
+$twitter = new Twitter('nira_22222');
+$array = $twitter->getPosts();
 ?>
 <div class="container">
-
     <div class="row head mt-4 pb-3">
         <div class="col-sm-7">
-            <h2 class="user-name">市古空</h2>
+            <h2 class="user-name"><?php the_title(); ?></h2>
 
             <?php if (!$_GET["scope"]): ?>
                 <a href="?scope=1">自分に関する投稿すべて表示</a>
@@ -46,7 +47,15 @@ $array=[1, 2, 3, 4, 5];
             <h3 class="sns-name mb-4">Twitter</h3>
             <ul class="posts">
                 <?php foreach ($array as $item): ?>
-                    <li class="card"><?php echo $item; ?></li>
+                    <li class="card">
+                        <article>
+                            <a class="text" href="https://twitter.com/<?php echo $item->user->screen_name; ?>/status/<?php echo $item->id; ?>">
+                                <?php echo $item->text; ?>
+                            </a>
+                            <img class="post_photo" src="<?php echo $item->entities->media[0]->media_url_https; ?>" alt="">
+                            <p class="created_at"><?php echo $item->created_at; ?></p>
+                        </article>
+                    </li>
                 <?php endforeach; ?>
             </ul>
         </div>
@@ -55,7 +64,7 @@ $array=[1, 2, 3, 4, 5];
         <div class="facebook mb-5">
             <h3 class="sns-name mb-4">Facebook</h3>
             <ul class="posts">
-                <?php foreach ($array as $item): ?>
+                <?php foreach ([0, 1, 2, 3] as $item): ?>
                     <li class="card"><?php echo $item; ?></li>
                 <?php endforeach; ?>
             </ul>
