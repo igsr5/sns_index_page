@@ -2,7 +2,7 @@
 
 <?php
 require 'Twitter.php';
-$twitter = new Twitter('nira_22222');
+$twitter = new Twitter('nira_22222',$_GET["is_reply"]);
 $array = $twitter->getPosts();
 ?>
 <div class="container">
@@ -10,10 +10,10 @@ $array = $twitter->getPosts();
         <div class="col-sm-7">
             <h2 class="user-name"><?php the_title(); ?></h2>
 
-            <?php if (!$_GET["scope"]): ?>
-                <a href="?scope=1">自分に関する投稿すべて表示</a>
+            <?php if (!$_GET["is_reply"]): ?>
+                <a href="?is_reply=1">自分に関する投稿すべて表示</a>
             <?php else: ?>
-                <a href="?scope=0">自分の投稿のみ表示</a>
+                <a href="?is_reply=0">自分の投稿のみ表示</a>
             <?php endif; ?>
         </div>
 
@@ -65,7 +65,7 @@ $array = $twitter->getPosts();
             <h3 class="sns-name mb-4">Facebook</h3>
             <ul class="posts">
                 <?php foreach ([0, 1, 2, 3] as $item): ?>
-                    <li class="card"><?php echo $item; ?></li>
+                    <li class="card"></li>
                 <?php endforeach; ?>
             </ul>
         </div>

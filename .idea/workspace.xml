@@ -19,19 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="add: Twitter投稿取得用クラス追加">
+    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="update: Twitter投稿を画面に表示できるように">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/Twitter.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/Twitter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/assets/css/sns-index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/assets/css/sns-index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/vendor/autoload.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/vendor/autoload.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/vendor/composer/ClassLoader.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/vendor/composer/ClassLoader.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/vendor/composer/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/vendor/composer/LICENSE" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/vendor/composer/autoload_classmap.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/vendor/composer/autoload_classmap.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/vendor/composer/autoload_namespaces.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/vendor/composer/autoload_namespaces.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/vendor/composer/autoload_psr4.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/vendor/composer/autoload_psr4.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/vendor/composer/autoload_real.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/vendor/composer/autoload_real.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/vendor/composer/autoload_static.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/vendor/composer/autoload_static.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,7 +47,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../todo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -168,10 +158,10 @@
       <screen x="509" y="-1080" width="1920" height="1050" />
     </state>
     <state x="1254" y="-864" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1604725694018" />
-    <state x="1162" y="-847" key="FileChooserDialogImpl" timestamp="1604670130881">
+    <state x="1162" y="-847" key="FileChooserDialogImpl" timestamp="1604746824216">
       <screen x="509" y="-1080" width="1920" height="1050" />
     </state>
-    <state x="1162" y="-847" key="FileChooserDialogImpl/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1604670130881" />
+    <state x="1162" y="-847" key="FileChooserDialogImpl/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1604746824216" />
     <state x="465" y="196" key="FileChooserDialogImpl/0.0.1368.882@0.0.1368.882" timestamp="1604554570733" />
     <state x="1207" y="-832" key="NewPhpClassDialog" timestamp="1604719971612">
       <screen x="509" y="-1080" width="1920" height="1050" />
