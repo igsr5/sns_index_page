@@ -24,7 +24,7 @@ $statuses = $connect->get(
         // ツイート件数
         'count'             => '20',
         // リプライを除外するかを、true（除外する）、false（除外しない）で指定
-        'exclude_replies'   => 'true',
+        'exclude_replies'   => 'false',
         // リツイートを含めるかを、true（含める）、false（含めない）で指定
         'include_rts'       => 'true'
     )
