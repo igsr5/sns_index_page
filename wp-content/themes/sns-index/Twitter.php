@@ -7,7 +7,6 @@ use Abraham\TwitterOAuth\TwitterOAuth;
 
 class Twitter
 {
-    // Twitter APIを利用する認証情報。xxxxxxxxの箇所にそれぞれ情報を指定
     private $CK = 'XMCdmPCe10mSHMmMydy0UmsXS'; // Consumer Keyをセット
     private $CS = 'Xv2XfK2ZtzWT5pFMilwDZhBHYRn6UuRuKcEHoP0DZ3M6Lzd9Qk'; // Consumer Secretをセット
     private $AT = '1273087480862961664-ZkEW5Tc632xu4UYincRMa26pR1iCO5'; // Access Tokenをセット

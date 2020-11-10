@@ -1,8 +1,11 @@
 <?php get_header(); ?>
 
 <?php
+$twitter=get_post_meta(get_the_ID(),'twitter');
+?>
+<?php
 require 'Twitter.php';
-$twitter = new Twitter('nira_22222',$_GET["is_reply"]);
+$twitter = new Twitter('nira_22222', $_GET["is_reply"]);
 $array = $twitter->getPosts();
 ?>
 <div class="container">
@@ -49,10 +52,12 @@ $array = $twitter->getPosts();
                 <?php foreach ($array as $item): ?>
                     <li class="card">
                         <article>
-                            <a class="text" href="https://twitter.com/<?php echo $item->user->screen_name; ?>/status/<?php echo $item->id; ?>">
+                            <a class="text"
+                               href="https://twitter.com/<?php echo $item->user->screen_name; ?>/status/<?php echo $item->id; ?>">
                                 <?php echo $item->text; ?>
                             </a>
-                            <img class="post_photo" src="<?php echo $item->entities->media[0]->media_url_https; ?>" alt="">
+                            <img class="post_photo" src="<?php echo $item->entities->media[0]->media_url_https; ?>"
+                                 alt="">
                             <p class="created_at"><?php echo $item->created_at; ?></p>
                         </article>
                     </li>
