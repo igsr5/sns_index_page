@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18466294-c8a7-43d5-8437-6306da96bf3b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="18466294-c8a7-43d5-8437-6306da96bf3b" name="Default Changelist" comment="update: replyを含むかどうか選べるようにする">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Twitter.php" beforeDir="false" afterPath="$PROJECT_DIR$/Twitter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/page.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +33,11 @@
     <execution />
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../../.." value="update-Twitter" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
@@ -52,7 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../yoyaku_system" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -63,8 +66,17 @@
       <option name="presentableId" value="Default" />
       <updated>1604850224510</updated>
       <workItem from="1604850225721" duration="601000" />
-      <workItem from="1604887980331" duration="687000" />
+      <workItem from="1604887980331" duration="1583000" />
+      <workItem from="1604897692469" duration="46000" />
     </task>
+    <task id="LOCAL-00001" summary="update: replyを含むかどうか選べるようにする">
+      <created>1604888740550</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604888740550</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -81,5 +93,19 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update: replyを含むかどうか選べるようにする" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: replyを含むかどうか選べるようにする" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="465" y="196" key="FileChooserDialogImpl" timestamp="1604897736222">
+      <screen x="0" y="0" width="1368" height="882" />
+    </state>
+    <state x="465" y="196" key="FileChooserDialogImpl/0.0.1368.882@0.0.1368.882" timestamp="1604897736222" />
+    <state x="277" y="174" key="Vcs.Push.Dialog.v2" timestamp="1604888756875">
+      <screen x="0" y="0" width="1368" height="882" />
+    </state>
+    <state x="277" y="174" key="Vcs.Push.Dialog.v2/0.0.1368.882@0.0.1368.882" timestamp="1604888756875" />
   </component>
 </project>
