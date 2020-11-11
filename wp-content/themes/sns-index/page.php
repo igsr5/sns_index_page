@@ -2,7 +2,7 @@
 
 <?php
 require 'Twitter.php';
-$twitter_name=get_post_meta(get_the_ID(),'twitter');
+$twitter_name = get_post_meta(get_the_ID(), 'twitter');
 $twitter = new Twitter($twitter_name, $_GET["is_reply"]);
 $twitter_posts = $twitter->getPosts();
 ?>
@@ -52,13 +52,18 @@ $twitter_posts = $twitter->getPosts();
                         <article>
                             <a class="text"
                                href="https://twitter.com/<?php echo $item->user->screen_name; ?>/status/<?php echo $item->id; ?>">
-                                <?php echo $item->text; ?>
+                                <?php if ($twitter->is_RT($item->text)) {
+
+                                } else {
+                                    echo $item->text;
+                                }
+                                ?>
                             </a>
                             <?php
                             // 引用リツイート
-                            if($item->is_quote_status){
+                            if ($item->is_quote_status) {
                                 echo "<br>";
-                                echo "<a class='text' href='https://twitter.com/",$item->quoted_status->user->screen_name,"/status/",$item->quoted_status->id,"'><span class='rt'>RT @",$item->quoted_status->user->name,":</span>",$item->quoted_status->text,"</a>";
+                                echo "<a class='text' href='https://twitter.com/", $item->quoted_status->user->screen_name, "/status/", $item->quoted_status->id, "'><span class='rt'>RT @", $item->quoted_status->user->name, ":</span>", $item->quoted_status->text, "</a>";
                             }
                             ?>
                             <img class="post_photo" src="<?php echo $item->entities->media[0]->media_url_https; ?>"

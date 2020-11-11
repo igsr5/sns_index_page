@@ -56,4 +56,9 @@ class Twitter
         return $this->posts;
     }
 
+    public function is_RT($tweet)
+    {
+        $text=substr($tweet,0,2);
+        return $text=='RT';
+    }
 }
