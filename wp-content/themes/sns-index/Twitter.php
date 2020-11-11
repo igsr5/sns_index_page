@@ -61,4 +61,11 @@ class Twitter
         $text=substr($tweet,0,2);
         return $text=='RT';
     }
+
+    public function add_color_rts($tweet)
+    {
+        $text=substr_replace($tweet,"<span class='rt'>RT",0,2);
+        $text = str_replace(':', ":</span>", $text);
+        return $text;
+    }
 }

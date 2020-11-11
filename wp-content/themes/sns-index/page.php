@@ -53,7 +53,7 @@ $twitter_posts = $twitter->getPosts();
                             <a class="text"
                                href="https://twitter.com/<?php echo $item->user->screen_name; ?>/status/<?php echo $item->id; ?>">
                                 <?php if ($twitter->is_RT($item->text)) {
-
+                                    echo $twitter->add_color_rts($item->text);
                                 } else {
                                     echo $item->text;
                                 }

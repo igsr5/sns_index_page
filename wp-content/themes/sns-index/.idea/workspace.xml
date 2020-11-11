@@ -19,10 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18466294-c8a7-43d5-8437-6306da96bf3b" name="Default Changelist" comment="fixed: カスタムフィールドが上手く取得できていなったバグを修正&#10;content-twitter.php を削除">
+    <list default="true" id="18466294-c8a7-43d5-8437-6306da96bf3b" name="Default Changelist" comment="add: ツイートがリツイートかどうか判断する関数を追加　Twitter-&gt;is_RT()">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Twitter.php" beforeDir="false" afterPath="$PROJECT_DIR$/Twitter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/sns-index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/sns-index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/page.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +57,12 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
@@ -72,7 +77,7 @@
       <workItem from="1604887980331" duration="1583000" />
       <workItem from="1604897692469" duration="46000" />
       <workItem from="1605056696605" duration="1226000" />
-      <workItem from="1605069186318" duration="1700000" />
+      <workItem from="1605069186318" duration="2473000" />
     </task>
     <task id="LOCAL-00001" summary="update: replyを含むかどうか選べるようにする">
       <created>1604888740550</created>
@@ -88,7 +93,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605070099014</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="add: ツイートがリツイートかどうか判断する関数を追加　Twitter-&gt;is_RT()">
+      <created>1605070955646</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605070955646</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -109,7 +121,8 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="update: replyを含むかどうか選べるようにする" />
     <MESSAGE value="fixed: カスタムフィールドが上手く取得できていなったバグを修正&#10;content-twitter.php を削除" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed: カスタムフィールドが上手く取得できていなったバグを修正&#10;content-twitter.php を削除" />
+    <MESSAGE value="add: ツイートがリツイートかどうか判断する関数を追加　Twitter-&gt;is_RT()" />
+    <option name="LAST_COMMIT_MESSAGE" value="add: ツイートがリツイートかどうか判断する関数を追加　Twitter-&gt;is_RT()" />
   </component>
   <component name="WindowStateProjectService">
     <state x="465" y="196" key="FileChooserDialogImpl" timestamp="1604897736222">
