@@ -20,7 +20,7 @@ $statuses = $connect->get(
     // 取得するツイートの条件を配列で指定
     array(
         // ユーザー名（@は不要）
-        'screen_name'       => 'nira_22222',
+        'screen_name'       => 'yuto_72_',
         // ツイート件数
         'count'             => '20',
         // リプライを除外するかを、true（除外する）、false（除外しない）で指定
