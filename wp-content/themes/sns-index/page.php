@@ -56,6 +56,12 @@ $array = $twitter->getPosts();
                                href="https://twitter.com/<?php echo $item->user->screen_name; ?>/status/<?php echo $item->id; ?>">
                                 <?php echo $item->text; ?>
                             </a>
+                            <?php
+                            if($item->is_quote_status):
+                                echo "<br>";
+                                echo "<a class='text' href='https://twitter.com/",$item->quoted_status->user->screen_name,"/status/",$item->quoted_status->id,"'>RT @",$item->quoted_status->user->name,":",$item->quoted_status->text,"</a>";
+                            ?>
+                            <?php endif; ?>
                             <img class="post_photo" src="<?php echo $item->entities->media[0]->media_url_https; ?>"
                                  alt="">
                             <p class="created_at"><?php echo $item->created_at; ?></p>

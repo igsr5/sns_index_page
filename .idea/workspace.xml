@@ -16,14 +16,17 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="update: Twitter投稿を画面に表示できるように">
+    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="update: カスタムフィールドの値からユーザー名を指定できるように">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/Twitter.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/Twitter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/page.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +52,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../todo" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -78,6 +81,7 @@
       <workItem from="1604670116477" duration="57000" />
       <workItem from="1604718579140" duration="8228000" />
       <workItem from="1604982948052" duration="766000" />
+      <workItem from="1605006948811" duration="74000" />
     </task>
     <task id="LOCAL-00001" summary="add: 作業用テーマSNS-sample追加">
       <created>1604554636250</created>
@@ -139,7 +143,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -161,9 +177,10 @@
       <screen x="509" y="-1080" width="1920" height="1050" />
     </state>
     <state x="1254" y="-864" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1604725694018" />
-    <state x="1162" y="-847" key="FileChooserDialogImpl" timestamp="1604746824216">
-      <screen x="509" y="-1080" width="1920" height="1050" />
+    <state x="465" y="196" key="FileChooserDialogImpl" timestamp="1605007020937">
+      <screen x="0" y="0" width="1368" height="882" />
     </state>
+    <state x="465" y="196" key="FileChooserDialogImpl/0.0.1368.882/509.-1080.1920.1050@0.0.1368.882" timestamp="1605007020937" />
     <state x="1162" y="-847" key="FileChooserDialogImpl/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1604746824216" />
     <state x="465" y="196" key="FileChooserDialogImpl/0.0.1368.882@0.0.1368.882" timestamp="1604554570733" />
     <state x="1207" y="-832" key="NewPhpClassDialog" timestamp="1604719971612">
