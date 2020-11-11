@@ -1,12 +1,10 @@
 <?php get_header(); ?>
 
 <?php
-$twitter=get_post_meta(get_the_ID(),'twitter');
-?>
-<?php
 require 'Twitter.php';
-$twitter = new Twitter('nira_22222', $_GET["is_reply"]);
-$array = $twitter->getPosts();
+$twitter_name=get_post_meta(get_the_ID(),'twitter');
+$twitter = new Twitter($twitter_name, $_GET["is_reply"]);
+$twitter_posts = $twitter->getPosts();
 ?>
 <div class="container">
     <div class="row head mt-4 pb-3">
@@ -49,7 +47,7 @@ $array = $twitter->getPosts();
         <div class="twitter mb-5">
             <h3 class="sns-name mb-4">Twitter</h3>
             <ul class="posts">
-                <?php foreach ($array as $item): ?>
+                <?php foreach ($twitter_posts as $item): ?>
                     <li class="card">
                         <article>
                             <a class="text"
@@ -57,11 +55,12 @@ $array = $twitter->getPosts();
                                 <?php echo $item->text; ?>
                             </a>
                             <?php
-                            if($item->is_quote_status):
+                            // 引用リツイート
+                            if($item->is_quote_status){
                                 echo "<br>";
-                                echo "<a class='text' href='https://twitter.com/",$item->quoted_status->user->screen_name,"/status/",$item->quoted_status->id,"'>RT @",$item->quoted_status->user->name,":",$item->quoted_status->text,"</a>";
+                                echo "<a class='text' href='https://twitter.com/",$item->quoted_status->user->screen_name,"/status/",$item->quoted_status->id,"'><span class='rt'>RT @",$item->quoted_status->user->name,":</span>",$item->quoted_status->text,"</a>";
+                            }
                             ?>
-                            <?php endif; ?>
                             <img class="post_photo" src="<?php echo $item->entities->media[0]->media_url_https; ?>"
                                  alt="">
                             <p class="created_at"><?php echo $item->created_at; ?></p>

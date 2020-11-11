@@ -19,10 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18466294-c8a7-43d5-8437-6306da96bf3b" name="Default Changelist" comment="update: replyを含むかどうか選べるようにする">
-      <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="18466294-c8a7-43d5-8437-6306da96bf3b" name="Default Changelist" comment="update:">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Twitter.php" beforeDir="false" afterPath="$PROJECT_DIR$/Twitter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/page.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -58,6 +58,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -71,6 +72,7 @@
       <workItem from="1604887980331" duration="1583000" />
       <workItem from="1604897692469" duration="46000" />
       <workItem from="1605056696605" duration="1226000" />
+      <workItem from="1605069186318" duration="851000" />
     </task>
     <task id="LOCAL-00001" summary="update: replyを含むかどうか選べるようにする">
       <created>1604888740550</created>
@@ -110,5 +112,16 @@
       <screen x="0" y="0" width="1368" height="882" />
     </state>
     <state x="277" y="174" key="Vcs.Push.Dialog.v2/0.0.1368.882@0.0.1368.882" timestamp="1604888756875" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="php">
+          <url>file://$PROJECT_DIR$/content-twitter.php</url>
+          <line>2</line>
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
