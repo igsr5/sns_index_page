@@ -25,8 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="update: カスタムフィールドの値からユーザー名を指定できるように">
+    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="fixed: ページネーションでis_replyを引き継ぐように">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/Twitter.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/Twitter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/page.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -135,7 +136,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604718728530</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="fixed: ページネーションでis_replyを引き継ぐように">
+      <created>1605264917679</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1605264917679</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -173,7 +181,8 @@
     <MESSAGE value="update: ユーザー検索フォームを作成" />
     <MESSAGE value="update: 各SNS投稿を表示する部分を作成" />
     <MESSAGE value="add: Twitter投稿取得用クラス追加" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: Twitter投稿取得用クラス追加" />
+    <MESSAGE value="fixed: ページネーションでis_replyを引き継ぐように" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed: ページネーションでis_replyを引き継ぐように" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1254" y="-864" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1604725694018">

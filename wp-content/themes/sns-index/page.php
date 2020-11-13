@@ -4,9 +4,13 @@
 require 'Paginate.php';
 require 'Twitter.php';
 $twitter_name = get_post_meta(get_the_ID(), 'twitter');
-$twitter = new Twitter($twitter_name, $_GET["is_reply"]);
+if (!$_GET['paginate']) {
+    $twitter = new Twitter($twitter_name, $_GET["is_reply"],4);
+}else{
+    $twitter = new Twitter($twitter_name, $_GET["is_reply"],4*$_GET["paginate"]);
+}
 $twitter_posts = $twitter->getPosts();
-$post_num = count($twitter_posts);
+$post_num = 100;
 
 if (!$_GET['paginate']) { // $_GET['page_id'] はURLに渡された現在のページ数
     $paginate = new Paginate($post_num, 1);
@@ -36,50 +40,8 @@ $twitter_posts = $paginate->slice_array($twitter_posts);
         </div>
     </div>
 
+    <!--paginate-->
     <?php if (!$_GET["is_reply"]): ?>
-    <nav aria-label="Page navigation example">
-        <ul class="pagination">
-            <li class="page-item">
-                <?php if ($paginate->is_first()): ?>
-                    <a class="page-link" href="#" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                <?php else: ?>
-                    <a class="page-link" href="?paginate=<?php echo $paginate->now - 1; ?>" aria-label="Previous">
-                        <span aria-hidden="true">&laquo;</span>
-                        <span class="sr-only">Previous</span>
-                    </a>
-                <?php endif; ?>
-            </li>
-            <?php
-            for ($i = 1; $i <= $paginate->max_page; $i++):
-                if ($i == $paginate->now):
-                    ?>
-                    <li class="page-item"><a class="page-link" href="#"><?php echo $i; ?></a></li>
-                <?php else: ?>
-                    <li class="page-item"><a class="page-link"
-                                             href="?paginate=<?php echo $i; ?>"><?php echo $i; ?></a></li>
-                <?php
-                endif;
-            endfor;
-            ?>
-            <li class="page-item">
-                <?php if ($paginate->is_end()): ?>
-                    <a class="page-link" href="#" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                <?php else: ?>
-                    <a class="page-link" href="?paginate=<?php echo $paginate->now + 1; ?>" aria-label="Next">
-                        <span aria-hidden="true">&raquo;</span>
-                        <span class="sr-only">Next</span>
-                    </a>
-                <?php endif; ?>
-            </li>
-        </ul>
-    </nav>
-    <?php else: ?>
         <nav aria-label="Page navigation example">
             <ul class="pagination">
                 <li class="page-item">
@@ -89,7 +51,7 @@ $twitter_posts = $paginate->slice_array($twitter_posts);
                             <span class="sr-only">Previous</span>
                         </a>
                     <?php else: ?>
-                        <a class="page-link" href="?is_reply=1&paginate=<?php echo $paginate->now - 1; ?>" aria-label="Previous">
+                        <a class="page-link" href="?paginate=<?php echo $paginate->now - 1; ?>" aria-label="Previous">
                             <span aria-hidden="true">&laquo;</span>
                             <span class="sr-only">Previous</span>
                         </a>
@@ -102,7 +64,7 @@ $twitter_posts = $paginate->slice_array($twitter_posts);
                         <li class="page-item"><a class="page-link" href="#"><?php echo $i; ?></a></li>
                     <?php else: ?>
                         <li class="page-item"><a class="page-link"
-                                                 href="?is_reply=1&paginate=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+                                                 href="?paginate=<?php echo $i; ?>"><?php echo $i; ?></a></li>
                     <?php
                     endif;
                 endfor;
@@ -114,7 +76,53 @@ $twitter_posts = $paginate->slice_array($twitter_posts);
                             <span class="sr-only">Next</span>
                         </a>
                     <?php else: ?>
-                        <a class="page-link" href="?is_reply=1&paginate=<?php echo $paginate->now + 1; ?>" aria-label="Next">
+                        <a class="page-link" href="?paginate=<?php echo $paginate->now + 1; ?>" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    <?php endif; ?>
+                </li>
+            </ul>
+        </nav>
+    <?php else: ?>
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <?php if ($paginate->is_first()): ?>
+                        <a class="page-link" href="#" aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    <?php else: ?>
+                        <a class="page-link" href="?is_reply=1&paginate=<?php echo $paginate->now - 1; ?>"
+                           aria-label="Previous">
+                            <span aria-hidden="true">&laquo;</span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                    <?php endif; ?>
+                </li>
+                <?php
+                for ($i = 1; $i <= $paginate->max_page; $i++):
+                    if ($i == $paginate->now):
+                        ?>
+                        <li class="page-item"><a class="page-link" href="#"><?php echo $i; ?></a></li>
+                    <?php else: ?>
+                        <li class="page-item"><a class="page-link"
+                                                 href="?is_reply=1&paginate=<?php echo $i; ?>"><?php echo $i; ?></a>
+                        </li>
+                    <?php
+                    endif;
+                endfor;
+                ?>
+                <li class="page-item">
+                    <?php if ($paginate->is_end()): ?>
+                        <a class="page-link" href="#" aria-label="Next">
+                            <span aria-hidden="true">&raquo;</span>
+                            <span class="sr-only">Next</span>
+                        </a>
+                    <?php else: ?>
+                        <a class="page-link" href="?is_reply=1&paginate=<?php echo $paginate->now + 1; ?>"
+                           aria-label="Next">
                             <span aria-hidden="true">&raquo;</span>
                             <span class="sr-only">Next</span>
                         </a>
@@ -167,46 +175,94 @@ $twitter_posts = $paginate->slice_array($twitter_posts);
     </div>
 </div>
 
-<nav aria-label="Page navigation example">
-    <ul class="pagination">
-        <li class="page-item">
-            <?php if ($paginate->is_first()): ?>
-                <a class="page-link" href="#" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                    <span class="sr-only">Previous</span>
-                </a>
-            <?php else: ?>
-                <a class="page-link" href="?paginate=<?php echo $paginate->now - 1; ?>" aria-label="Previous">
-                    <span aria-hidden="true">&laquo;</span>
-                    <span class="sr-only">Previous</span>
-                </a>
-            <?php endif; ?>
-        </li>
-        <?php
-        for ($i = 1; $i <= $paginate->max_page; $i++):
-            if ($i == $paginate->now):
-                ?>
-                <li class="page-item"><a class="page-link" href="#"><?php echo $i; ?></a></li>
-            <?php else: ?>
-                <li class="page-item"><a class="page-link"
-                                         href="?paginate=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+<!--paginate-->
+<?php if (!$_GET["is_reply"]): ?>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <?php if ($paginate->is_first()): ?>
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                <?php else: ?>
+                    <a class="page-link" href="?paginate=<?php echo $paginate->now - 1; ?>" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                <?php endif; ?>
+            </li>
             <?php
-            endif;
-        endfor;
-        ?>
-        <li class="page-item">
-            <?php if ($paginate->is_end()): ?>
-                <a class="page-link" href="#" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                    <span class="sr-only">Next</span>
-                </a>
-            <?php else: ?>
-                <a class="page-link" href="?paginate=<?php echo $paginate->now + 1; ?>" aria-label="Next">
-                    <span aria-hidden="true">&raquo;</span>
-                    <span class="sr-only">Next</span>
-                </a>
-            <?php endif; ?>
-        </li>
-    </ul>
-</nav>
+            for ($i = 1; $i <= $paginate->max_page; $i++):
+                if ($i == $paginate->now):
+                    ?>
+                    <li class="page-item"><a class="page-link" href="#"><?php echo $i; ?></a></li>
+                <?php else: ?>
+                    <li class="page-item"><a class="page-link"
+                                             href="?paginate=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+                <?php
+                endif;
+            endfor;
+            ?>
+            <li class="page-item">
+                <?php if ($paginate->is_end()): ?>
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                <?php else: ?>
+                    <a class="page-link" href="?paginate=<?php echo $paginate->now + 1; ?>" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                <?php endif; ?>
+            </li>
+        </ul>
+    </nav>
+<?php else: ?>
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <li class="page-item">
+                <?php if ($paginate->is_first()): ?>
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                <?php else: ?>
+                    <a class="page-link" href="?is_reply=1&paginate=<?php echo $paginate->now - 1; ?>"
+                       aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                <?php endif; ?>
+            </li>
+            <?php
+            for ($i = 1; $i <= $paginate->max_page; $i++):
+                if ($i == $paginate->now):
+                    ?>
+                    <li class="page-item"><a class="page-link" href="#"><?php echo $i; ?></a></li>
+                <?php else: ?>
+                    <li class="page-item"><a class="page-link"
+                                             href="?is_reply=1&paginate=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+                <?php
+                endif;
+            endfor;
+            ?>
+            <li class="page-item">
+                <?php if ($paginate->is_end()): ?>
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                <?php else: ?>
+                    <a class="page-link" href="?is_reply=1&paginate=<?php echo $paginate->now + 1; ?>"
+                       aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                <?php endif; ?>
+            </li>
+        </ul>
+    </nav>
+<?php endif; ?>
 <?php get_footer(); ?>
