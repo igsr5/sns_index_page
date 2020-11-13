@@ -26,7 +26,7 @@ class Twitter
                     // ユーザー名（@は不要）
                     'screen_name' => $userName,
                     // ツイート件数
-                    'count' => '4',
+                    'count' => '100',
                     // リプライを除外するかを、true（除外する）、false（除外しない）で指定
                     'exclude_replies' => 'false',
                     // リツイートを含めるかを、true（含める）、false（含めない）で指定
@@ -41,7 +41,7 @@ class Twitter
                     // ユーザー名（@は不要）
                     'screen_name' => $userName,
                     // ツイート件数
-                    'count' => '4',
+                    'count' => '100',
                     // リプライを除外するかを、true（除外する）、false（除外しない）で指定
                     'exclude_replies' => 'true',
                     // リツイートを含めるかを、true（含める）、false（含めない）で指定
