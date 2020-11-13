@@ -25,9 +25,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="fixed: ページネーションでis_replyを引き継ぐように">
+    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="update: 現ページによって取得する投稿数を変更するように">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/Twitter.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/Twitter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/assets/css/sns-index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/assets/css/sns-index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/page.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -143,7 +143,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605264917679</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update: 現ページによって取得する投稿数を変更するように">
+      <created>1605265491978</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1605265491978</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -182,7 +189,8 @@
     <MESSAGE value="update: 各SNS投稿を表示する部分を作成" />
     <MESSAGE value="add: Twitter投稿取得用クラス追加" />
     <MESSAGE value="fixed: ページネーションでis_replyを引き継ぐように" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed: ページネーションでis_replyを引き継ぐように" />
+    <MESSAGE value="update: 現ページによって取得する投稿数を変更するように" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: 現ページによって取得する投稿数を変更するように" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1254" y="-864" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1604725694018">
@@ -211,9 +219,10 @@
       <screen x="0" y="0" width="1368" height="882" />
     </state>
     <state x="343" y="203" key="run.anything.popup/0.0.1368.882@0.0.1368.882" timestamp="1605245110980" />
-    <state x="1132" y="-853" width="670" height="58" key="search.everywhere.popup" timestamp="1604670121363">
-      <screen x="509" y="-1080" width="1920" height="1050" />
+    <state x="445" y="192" width="672" height="160" key="search.everywhere.popup" timestamp="1605265643103">
+      <screen x="0" y="0" width="1368" height="882" />
     </state>
     <state x="1132" y="-853" width="670" height="58" key="search.everywhere.popup/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1604670121363" />
+    <state x="445" y="192" width="672" height="160" key="search.everywhere.popup/0.0.1368.882@0.0.1368.882" timestamp="1605265643103" />
   </component>
 </project>
