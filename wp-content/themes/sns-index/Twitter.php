@@ -13,7 +13,7 @@ class Twitter
     private $AS = 'B8OHd8XtQYRdlkFvSAWtYprYybMSl08UFG3ctY7T6fXP0'; // Access Token Secretをセット
     private $posts;
 
-    function __construct($userName,$is_reply)
+    function __construct($userName,$is_reply,$count)
     {
         // TwitterOAuthクラスのインスタンスを作成
         $connect = new TwitterOAuth($this->CK, $this->CS, $this->AT, $this->AS);
@@ -26,7 +26,7 @@ class Twitter
                     // ユーザー名（@は不要）
                     'screen_name' => $userName,
                     // ツイート件数
-                    'count' => '100',
+                    'count' => $count,
                     // リプライを除外するかを、true（除外する）、false（除外しない）で指定
                     'exclude_replies' => 'false',
                     // リツイートを含めるかを、true（含める）、false（含めない）で指定
