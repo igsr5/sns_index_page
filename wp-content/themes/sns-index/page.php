@@ -1,11 +1,21 @@
 <?php get_header(); ?>
 
 <?php
+require 'Paginate.php';
 require 'Twitter.php';
 $twitter_name = get_post_meta(get_the_ID(), 'twitter');
 $twitter = new Twitter($twitter_name, $_GET["is_reply"]);
 $twitter_posts = $twitter->getPosts();
+$post_num = count($twitter_posts);
+
+if (!$_GET['paginate']) { // $_GET['page_id'] はURLに渡された現在のページ数
+    $paginate = new Paginate($post_num, 1);
+} else {
+    $paginate = new Paginate($post_num, $_GET['paginate']);
+}
+$twitter_posts = $paginate->slice_array($twitter_posts);
 ?>
+
 <div class="container">
     <div class="row head mt-4 pb-3">
         <div class="col-sm-7">
@@ -27,79 +37,132 @@ $twitter_posts = $twitter->getPosts();
     </div>
 
 
-    <div class="sns-content mt-5">
-        <nav aria-label="...">
-            <ul class="pagination">
-                <li class="page-item disabled">
-                    <a class="page-link" href="#" tabindex="-1"><</a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">1</a></li>
-                <li class="page-item active">
-                    <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="page-item"><a class="page-link" href="#">3</a></li>
-                <li class="page-item">
-                    <a class="page-link" href="#">></a>
-                </li>
-            </ul>
-        </nav>
-        <!--Twitter-->
-        <div class="twitter mb-5">
-            <h3 class="sns-name mb-4">Twitter</h3>
-            <ul class="posts">
-                <?php foreach ($twitter_posts as $item): ?>
-                    <li class="card">
-                        <article>
-                            <a class="text"
-                               href="https://twitter.com/<?php echo $item->user->screen_name; ?>/status/<?php echo $item->id; ?>">
-                                <?php if ($twitter->is_RT($item->text)) {
-                                    echo $twitter->add_color_rts($item->text);
-                                } else {
-                                    echo $item->text;
-                                }
-                                ?>
-                            </a>
-                            <?php
-                            // 引用リツイート
-                            if ($item->is_quote_status) {
-                                echo "<br>";
-                                echo "<a class='text' href='https://twitter.com/", $item->quoted_status->user->screen_name, "/status/", $item->quoted_status->id, "'><span class='rt'>RT @", $item->quoted_status->user->name, ":</span>", $item->quoted_status->text, "</a>";
-                            }
-                            ?>
-                            <img class="post_photo" src="<?php echo $item->entities->media[0]->media_url_https; ?>"
-                                 alt="">
-                            <p class="created_at"><?php echo $item->created_at; ?></p>
-                        </article>
-                    </li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
-
-        <!--Facebook-->
-        <div class="facebook mb-5">
-            <h3 class="sns-name mb-4">Facebook</h3>
-            <ul class="posts">
-                <?php foreach ([0, 1, 2, 3] as $item): ?>
-                    <li class="card"></li>
-                <?php endforeach; ?>
-            </ul>
-        </div>
-    </div>
-
-    <nav aria-label="..." class="text-align-right">
+    <nav aria-label="Page navigation example">
         <ul class="pagination">
-            <li class="page-item disabled">
-                <a class="page-link" href="#" tabindex="-1"><</a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">1</a></li>
-            <li class="page-item active">
-                <a class="page-link" href="#">2 <span class="sr-only">(current)</span></a>
-            </li>
-            <li class="page-item"><a class="page-link" href="#">3</a></li>
             <li class="page-item">
-                <a class="page-link" href="#">></a>
+                <?php if ($paginate->is_first()): ?>
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                <?php else: ?>
+                    <a class="page-link" href="?paginate=<?php echo $paginate->now - 1; ?>" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                <?php endif; ?>
+            </li>
+            <?php
+            for ($i = 1; $i <= $paginate->max_page; $i++):
+                if ($i == $paginate->now):
+                    ?>
+                    <li class="page-item"><a class="page-link" href="#"><?php echo $i; ?></a></li>
+                <?php else: ?>
+                    <li class="page-item"><a class="page-link"
+                                             href="?paginate=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+                <?php
+                endif;
+            endfor;
+            ?>
+            <li class="page-item">
+                <?php if ($paginate->is_end()): ?>
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                <?php else: ?>
+                    <a class="page-link" href="?paginate=<?php echo $paginate->now + 1; ?>" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                <?php endif; ?>
             </li>
         </ul>
     </nav>
+
+    <!--Twitter-->
+    <div class="twitter mb-5">
+        <h3 class="sns-name mb-4">Twitter</h3>
+        <ul class="posts">
+            <?php foreach ($twitter_posts as $item): ?>
+                <li class="card">
+                    <article>
+                        <a class="text"
+                           href="https://twitter.com/<?php echo $item->user->screen_name; ?>/status/<?php echo $item->id; ?>">
+                            <?php if ($twitter->is_RT($item->text)) {
+                                echo $twitter->add_color_rts($item->text);
+                            } else {
+                                echo $item->text;
+                            }
+                            ?>
+                        </a>
+                        <?php
+                        // 引用リツイート
+                        if ($item->is_quote_status) {
+                            echo "<br>";
+                            echo "<a class='text' href='https://twitter.com/", $item->quoted_status->user->screen_name, "/status/", $item->quoted_status->id, "'><span class='rt'>RT @", $item->quoted_status->user->name, ":</span>", $item->quoted_status->text, "</a>";
+                        }
+                        ?>
+                        <img class="post_photo" src="<?php echo $item->entities->media[0]->media_url_https; ?>"
+                             alt="">
+                        <p class="created_at"><?php echo $item->created_at; ?></p>
+                    </article>
+                </li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
+
+    <!--Facebook-->
+    <div class="facebook mb-5">
+        <h3 class="sns-name mb-4">Facebook</h3>
+        <ul class="posts">
+            <?php foreach ([0, 1, 2, 3] as $item): ?>
+                <li class="card"></li>
+            <?php endforeach; ?>
+        </ul>
+    </div>
 </div>
+
+<nav aria-label="Page navigation example">
+    <ul class="pagination">
+        <li class="page-item">
+            <?php if ($paginate->is_first()): ?>
+                <a class="page-link" href="#" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            <?php else: ?>
+                <a class="page-link" href="?paginate=<?php echo $paginate->now - 1; ?>" aria-label="Previous">
+                    <span aria-hidden="true">&laquo;</span>
+                    <span class="sr-only">Previous</span>
+                </a>
+            <?php endif; ?>
+        </li>
+        <?php
+        for ($i = 1; $i <= $paginate->max_page; $i++):
+            if ($i == $paginate->now):
+                ?>
+                <li class="page-item"><a class="page-link" href="#"><?php echo $i; ?></a></li>
+            <?php else: ?>
+                <li class="page-item"><a class="page-link"
+                                         href="?paginate=<?php echo $i; ?>"><?php echo $i; ?></a></li>
+            <?php
+            endif;
+        endfor;
+        ?>
+        <li class="page-item">
+            <?php if ($paginate->is_end()): ?>
+                <a class="page-link" href="#" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            <?php else: ?>
+                <a class="page-link" href="?paginate=<?php echo $paginate->now + 1; ?>" aria-label="Next">
+                    <span aria-hidden="true">&raquo;</span>
+                    <span class="sr-only">Next</span>
+                </a>
+            <?php endif; ?>
+        </li>
+    </ul>
+</nav>
 <?php get_footer(); ?>
