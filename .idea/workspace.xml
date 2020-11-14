@@ -25,10 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="update: 現ページによって取得する投稿数を変更するように">
+    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="update: ページネーションナビに上下余白を追加">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/assets/css/sns-index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/assets/css/sns-index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/page.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,7 +39,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="fixed-pagijate" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -54,7 +52,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../paginate" />
+    <property name="last_opened_file_path" value="D:/program/work/themes" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -86,6 +84,7 @@
       <workItem from="1604982948052" duration="766000" />
       <workItem from="1605006948811" duration="74000" />
       <workItem from="1605243461652" duration="1684000" />
+      <workItem from="1605273136586" duration="32000" />
     </task>
     <task id="LOCAL-00001" summary="add: 作業用テーマSNS-sample追加">
       <created>1604554636250</created>
@@ -197,11 +196,11 @@
       <screen x="509" y="-1080" width="1920" height="1050" />
     </state>
     <state x="1254" y="-864" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1604725694018" />
-    <state x="465" y="196" key="FileChooserDialogImpl" timestamp="1605243470445">
-      <screen x="0" y="0" width="1368" height="882" />
+    <state x="1162" y="-847" key="FileChooserDialogImpl" timestamp="1605273166466">
+      <screen x="509" y="-1080" width="1920" height="1050" />
     </state>
     <state x="465" y="196" key="FileChooserDialogImpl/0.0.1368.882/509.-1080.1920.1050@0.0.1368.882" timestamp="1605007020937" />
-    <state x="1162" y="-847" key="FileChooserDialogImpl/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1604746824216" />
+    <state x="1162" y="-847" key="FileChooserDialogImpl/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605273166466" />
     <state x="465" y="196" key="FileChooserDialogImpl/0.0.1368.882@0.0.1368.882" timestamp="1605243470445" />
     <state x="1207" y="-832" key="NewPhpClassDialog" timestamp="1604719971612">
       <screen x="509" y="-1080" width="1920" height="1050" />
