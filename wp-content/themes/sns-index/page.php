@@ -33,10 +33,7 @@ $twitter_posts = $paginate->slice_array($twitter_posts);
         </div>
 
         <div class="col-sm-5 mt-3">
-            <form class="row" action="">
-                <input class="form-control col-5 offset-1" type="text" name="user_name" placeholder="username">
-                <input class="btn btn-primary col-3 ml-2" type="submit" value="検索">
-            </form>
+            <?php get_search_form(); ?>
         </div>
     </div>
 

@@ -25,10 +25,11 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="update: 現ページによって取得する投稿数を変更するように">
+    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="add searchform.php">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/assets/css/sns-index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/assets/css/sns-index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/search.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/searchform.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/searchform.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,7 +55,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../paginate" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -86,6 +87,8 @@
       <workItem from="1604982948052" duration="766000" />
       <workItem from="1605006948811" duration="74000" />
       <workItem from="1605243461652" duration="1684000" />
+      <workItem from="1605273136586" duration="32000" />
+      <workItem from="1605353713933" duration="541000" />
     </task>
     <task id="LOCAL-00001" summary="add: 作業用テーマSNS-sample追加">
       <created>1604554636250</created>
@@ -150,7 +153,21 @@
       <option name="project" value="LOCAL" />
       <updated>1605265491978</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="add search.php">
+      <created>1605353778128</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1605353778128</updated>
+    </task>
+    <task id="LOCAL-00011" summary="add searchform.php">
+      <created>1605353881749</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1605353881749</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,18 +207,20 @@
     <MESSAGE value="add: Twitter投稿取得用クラス追加" />
     <MESSAGE value="fixed: ページネーションでis_replyを引き継ぐように" />
     <MESSAGE value="update: 現ページによって取得する投稿数を変更するように" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: 現ページによって取得する投稿数を変更するように" />
+    <MESSAGE value="add search.php" />
+    <MESSAGE value="add searchform.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="add searchform.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1254" y="-864" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1604725694018">
       <screen x="509" y="-1080" width="1920" height="1050" />
     </state>
     <state x="1254" y="-864" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1604725694018" />
-    <state x="465" y="196" key="FileChooserDialogImpl" timestamp="1605243470445">
-      <screen x="0" y="0" width="1368" height="882" />
+    <state x="1162" y="-847" key="FileChooserDialogImpl" timestamp="1605273166466">
+      <screen x="509" y="-1080" width="1920" height="1050" />
     </state>
     <state x="465" y="196" key="FileChooserDialogImpl/0.0.1368.882/509.-1080.1920.1050@0.0.1368.882" timestamp="1605007020937" />
-    <state x="1162" y="-847" key="FileChooserDialogImpl/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1604746824216" />
+    <state x="1162" y="-847" key="FileChooserDialogImpl/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605273166466" />
     <state x="465" y="196" key="FileChooserDialogImpl/0.0.1368.882@0.0.1368.882" timestamp="1605243470445" />
     <state x="1207" y="-832" key="NewPhpClassDialog" timestamp="1604719971612">
       <screen x="509" y="-1080" width="1920" height="1050" />
@@ -219,10 +238,10 @@
       <screen x="0" y="0" width="1368" height="882" />
     </state>
     <state x="343" y="203" key="run.anything.popup/0.0.1368.882@0.0.1368.882" timestamp="1605245110980" />
-    <state x="445" y="192" width="672" height="160" key="search.everywhere.popup" timestamp="1605265643103">
-      <screen x="0" y="0" width="1368" height="882" />
+    <state x="1132" y="-853" width="672" height="160" key="search.everywhere.popup" timestamp="1605353805024">
+      <screen x="509" y="-1080" width="1920" height="1050" />
     </state>
-    <state x="1132" y="-853" width="670" height="58" key="search.everywhere.popup/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1604670121363" />
+    <state x="1132" y="-853" width="672" height="160" key="search.everywhere.popup/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605353805024" />
     <state x="445" y="192" width="672" height="160" key="search.everywhere.popup/0.0.1368.882@0.0.1368.882" timestamp="1605265643103" />
   </component>
 </project>
