@@ -19,14 +19,15 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="update: paginateをテンプレート化">
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/assets/css/sns-index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/assets/css/sns-index.css" afterDir="false" />
+    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="update index.php">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/search.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -179,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605408276456</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="update index.php">
+      <created>1605409697140</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1605409697140</updated>
+    </task>
+    <option name="localTasksCounter" value="15" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,19 +198,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -223,7 +219,8 @@
     <MESSAGE value="add searchform.php" />
     <MESSAGE value="update: 検索機能を追加" />
     <MESSAGE value="update: paginateをテンプレート化" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: paginateをテンプレート化" />
+    <MESSAGE value="update index.php" />
+    <option name="LAST_COMMIT_MESSAGE" value="update index.php" />
   </component>
   <component name="WindowStateProjectService">
     <state x="1254" y="-864" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog" timestamp="1604725694018">
@@ -236,6 +233,22 @@
     <state x="465" y="196" key="FileChooserDialogImpl/0.0.1368.882/509.-1080.1920.1050@0.0.1368.882" timestamp="1605007020937" />
     <state x="1162" y="-847" key="FileChooserDialogImpl/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605273166466" />
     <state x="465" y="196" key="FileChooserDialogImpl/0.0.1368.882@0.0.1368.882" timestamp="1605243470445" />
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom" timestamp="1605409572868">
+      <screen x="509" y="-1080" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605409572868" />
+    <state width="1877" height="264" key="GridCell.Tab.0.center" timestamp="1605409572867">
+      <screen x="509" y="-1080" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="264" key="GridCell.Tab.0.center/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605409572867" />
+    <state width="1877" height="264" key="GridCell.Tab.0.left" timestamp="1605409572867">
+      <screen x="509" y="-1080" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="264" key="GridCell.Tab.0.left/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605409572867" />
+    <state width="1877" height="264" key="GridCell.Tab.0.right" timestamp="1605409572868">
+      <screen x="509" y="-1080" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="264" key="GridCell.Tab.0.right/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605409572868" />
     <state x="1207" y="-832" key="NewPhpClassDialog" timestamp="1604719971612">
       <screen x="509" y="-1080" width="1920" height="1050" />
     </state>
@@ -249,14 +262,18 @@
     </state>
     <state x="898" y="-873" key="Vcs.Push.Dialog.v2/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605354429812" />
     <state x="277" y="174" key="Vcs.Push.Dialog.v2/0.0.1368.882@0.0.1368.882" timestamp="1604555479701" />
+    <state x="1288" y="-641" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605409946287">
+      <screen x="509" y="-1080" width="1920" height="1050" />
+    </state>
+    <state x="1288" y="-641" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605409946287" />
     <state x="343" y="203" key="run.anything.popup" timestamp="1605245110980">
       <screen x="0" y="0" width="1368" height="882" />
     </state>
     <state x="343" y="203" key="run.anything.popup/0.0.1368.882@0.0.1368.882" timestamp="1605245110980" />
-    <state x="1132" y="-853" width="672" height="160" key="search.everywhere.popup" timestamp="1605408283116">
+    <state x="1132" y="-853" width="672" height="160" key="search.everywhere.popup" timestamp="1605409705243">
       <screen x="509" y="-1080" width="1920" height="1050" />
     </state>
-    <state x="1132" y="-853" width="672" height="160" key="search.everywhere.popup/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605408283116" />
+    <state x="1132" y="-853" width="672" height="160" key="search.everywhere.popup/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605409705243" />
     <state x="445" y="192" width="672" height="160" key="search.everywhere.popup/0.0.1368.882@0.0.1368.882" timestamp="1605265643103" />
   </component>
 </project>
