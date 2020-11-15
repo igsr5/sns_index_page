@@ -65,3 +65,11 @@ ul {
 nav{
     margin: 15px 0;
 }
+
+.page_link{
+    margin: 5px 0;
+}
+
+.page_link a {
+    font-size: 2.5rem;
+}

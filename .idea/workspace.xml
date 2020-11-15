@@ -19,14 +19,16 @@
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:main" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
     <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="update: paginateをテンプレート化">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/assets/css/sns-index.css" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/assets/css/sns-index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/index.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -190,19 +192,7 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State>
-              <option name="FILTERS">
-                <map>
-                  <entry key="branch">
-                    <value>
-                      <list>
-                        <option value="main" />
-                      </list>
-                    </value>
-                  </entry>
-                </map>
-              </option>
-            </State>
+            <State />
           </value>
         </entry>
       </map>
@@ -236,6 +226,22 @@
     <state x="465" y="196" key="FileChooserDialogImpl/0.0.1368.882/509.-1080.1920.1050@0.0.1368.882" timestamp="1605007020937" />
     <state x="1162" y="-847" key="FileChooserDialogImpl/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605273166466" />
     <state x="465" y="196" key="FileChooserDialogImpl/0.0.1368.882@0.0.1368.882" timestamp="1605243470445" />
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom" timestamp="1605409572868">
+      <screen x="509" y="-1080" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="264" key="GridCell.Tab.0.bottom/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605409572868" />
+    <state width="1877" height="264" key="GridCell.Tab.0.center" timestamp="1605409572867">
+      <screen x="509" y="-1080" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="264" key="GridCell.Tab.0.center/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605409572867" />
+    <state width="1877" height="264" key="GridCell.Tab.0.left" timestamp="1605409572867">
+      <screen x="509" y="-1080" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="264" key="GridCell.Tab.0.left/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605409572867" />
+    <state width="1877" height="264" key="GridCell.Tab.0.right" timestamp="1605409572868">
+      <screen x="509" y="-1080" width="1920" height="1050" />
+    </state>
+    <state width="1877" height="264" key="GridCell.Tab.0.right/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605409572868" />
     <state x="1207" y="-832" key="NewPhpClassDialog" timestamp="1604719971612">
       <screen x="509" y="-1080" width="1920" height="1050" />
     </state>
@@ -253,10 +259,10 @@
       <screen x="0" y="0" width="1368" height="882" />
     </state>
     <state x="343" y="203" key="run.anything.popup/0.0.1368.882@0.0.1368.882" timestamp="1605245110980" />
-    <state x="1132" y="-853" width="672" height="160" key="search.everywhere.popup" timestamp="1605408283116">
+    <state x="1132" y="-853" width="672" height="160" key="search.everywhere.popup" timestamp="1605409394478">
       <screen x="509" y="-1080" width="1920" height="1050" />
     </state>
-    <state x="1132" y="-853" width="672" height="160" key="search.everywhere.popup/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605408283116" />
+    <state x="1132" y="-853" width="672" height="160" key="search.everywhere.popup/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605409394478" />
     <state x="445" y="192" width="672" height="160" key="search.everywhere.popup/0.0.1368.882@0.0.1368.882" timestamp="1605265643103" />
   </component>
 </project>
