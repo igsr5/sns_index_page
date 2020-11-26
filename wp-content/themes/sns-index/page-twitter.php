@@ -3,23 +3,14 @@
 <?php
 require 'Paginate.php';
 require 'Twitter.php';
-$twitter_name = get_post_meta(get_the_ID(), 'twitter');
+
+$twitter_name = $_GET['user_name'];
 if (!$_GET['paginate']) {
     $twitter = new Twitter($twitter_name, $_GET["is_reply"], 50);
 } else {
     $twitter = new Twitter($twitter_name, $_GET["is_reply"], 60);
 }
 $twitter_posts = $twitter->getPosts();
-$post_num = 100;
-
-// if (!$_GET['paginate']) { // $_GET['page_id'] はURLに渡された現在のページ数
-//     global $paginate;
-//     $paginate = new Paginate($post_num, 1);
-// } else {
-//     global $paginate;
-//     $paginate = new Paginate($post_num, $_GET['paginate']);
-// }
-// $twitter_posts = $paginate->slice_array($twitter_posts);
 ?>
 
 <div class="container">
@@ -39,8 +30,6 @@ $post_num = 100;
         </div>
     </div>
 
-    <!--paginate-->
-    <?php //get_template_part('paginate_content') ?>
 
     <!--Twitter-->
     <div class="twitter mb-5">
@@ -74,8 +63,6 @@ $post_num = 100;
         </ul>
     </div>
 
-    <!--paginate-->
-    <?php //get_template_part('paginate_content') ?>
 </div>
 
 <?php get_footer(); ?>

@@ -19,12 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18466294-c8a7-43d5-8437-6306da96bf3b" name="Default Changelist" comment="add: リツイートだった場合RT~:を緑色にする関数&#10;Twitter-&gt;add_color_rtsを作成">
-      <change afterPath="$PROJECT_DIR$/front_page.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../../../.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../../../.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="18466294-c8a7-43d5-8437-6306da96bf3b" name="Default Changelist" comment="update: トップページで投稿が見れるようにした">
+      <change afterPath="$PROJECT_DIR$/page-twitter.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Twitter.php" beforeDir="false" afterPath="$PROJECT_DIR$/Twitter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/css/sns-index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/sns-index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/page.php" afterDir="false" />
     </list>
@@ -40,7 +37,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../../.." value="update-RT-color" />
+        <entry key="$PROJECT_DIR$/../../.." value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -83,7 +80,8 @@
       <workItem from="1605056696605" duration="1226000" />
       <workItem from="1605069186318" duration="2473000" />
       <workItem from="1605140554845" duration="428000" />
-      <workItem from="1606355548518" duration="4010000" />
+      <workItem from="1606355548518" duration="4402000" />
+      <workItem from="1606389485779" duration="835000" />
     </task>
     <task id="LOCAL-00001" summary="update: replyを含むかどうか選べるようにする">
       <created>1604888740550</created>
@@ -106,7 +104,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605070955646</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="update: トップページで投稿が見れるようにした">
+      <created>1606360315334</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606360315335</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,7 +133,8 @@
     <MESSAGE value="update: replyを含むかどうか選べるようにする" />
     <MESSAGE value="fixed: カスタムフィールドが上手く取得できていなったバグを修正&#10;content-twitter.php を削除" />
     <MESSAGE value="add: ツイートがリツイートかどうか判断する関数を追加　Twitter-&gt;is_RT()" />
-    <option name="LAST_COMMIT_MESSAGE" value="add: ツイートがリツイートかどうか判断する関数を追加　Twitter-&gt;is_RT()" />
+    <MESSAGE value="update: トップページで投稿が見れるようにした" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: トップページで投稿が見れるようにした" />
   </component>
   <component name="WindowStateProjectService">
     <state x="465" y="196" key="FileChooserDialogImpl" timestamp="1605140984242">
@@ -139,5 +145,9 @@
       <screen x="0" y="0" width="1368" height="882" />
     </state>
     <state x="277" y="174" key="Vcs.Push.Dialog.v2/0.0.1368.882@0.0.1368.882" timestamp="1605071748902" />
+    <state x="347" y="186" width="672" height="678" key="search.everywhere.popup" timestamp="1606362573655">
+      <screen x="0" y="0" width="1368" height="882" />
+    </state>
+    <state x="347" y="186" width="672" height="678" key="search.everywhere.popup/0.0.1368.882@0.0.1368.882" timestamp="1606362573655" />
   </component>
 </project>

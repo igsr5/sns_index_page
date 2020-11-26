@@ -32,7 +32,7 @@ $twitter_posts = $twitter->getPosts();
     </div>
 
     <!--Twitter-->
-    <h3 class="sns-name mb-4">Twitter</h3>
+    <h3 class="sns-name mb-4"><a href="<?php echo home_url('/twitter'),"?user_name=",$twitter_name; ?>">Twitter</a></h3>
     <div class="top-twitter mb-5">
         <ul class="top-posts">
             <?php foreach ($twitter_posts as $item): ?>
