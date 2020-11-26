@@ -5,9 +5,9 @@ require 'Paginate.php';
 require 'Twitter.php';
 $twitter_name = get_post_meta(get_the_ID(), 'twitter');
 if (!$_GET['paginate']) {
-    $twitter = new Twitter($twitter_name, $_GET["is_reply"], 4);
+    $twitter = new Twitter($twitter_name, $_GET["is_reply"], 100);
 } else {
-    $twitter = new Twitter($twitter_name, $_GET["is_reply"], 4 * $_GET["paginate"]);
+    $twitter = new Twitter($twitter_name, $_GET["is_reply"], 100);
 }
 $twitter_posts = $twitter->getPosts();
 $post_num = 100;
