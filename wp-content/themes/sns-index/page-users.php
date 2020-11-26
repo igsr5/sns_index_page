@@ -4,17 +4,21 @@
 require 'Paginate.php';
 require 'Twitter.php';
 
+
 // 子ページ取得
 $args = array(
     'post_parent' => get_the_ID(),
     'post_status' => 'publish',
-    'post_type'   => 'page'
+    'post_type' => 'page'
 );
-$children_array = get_children( $args );
+$children_array = get_children($args);
+
+$page_id = $_GET['paginate'];
+$max_page = count($children_array)-1;
 
 // ユーザーを一人選ぶ
-$user=array_slice($children_array,0,1);
-$user_id=$user[0]->ID;
+$user = array_slice($children_array, $page_id, 1);
+$user_id = $user[0]->ID;
 $twitter_name = get_post_custom($user_id)['twitter'][0];
 $page = get_page($user_id);
 
@@ -42,8 +46,25 @@ $twitter_posts = $twitter->getPosts();
         </div>
     </div>
 
+    <nav aria-label="Page navigation example">
+        <ul class="pagination">
+            <?php if ($page_id <= 0): ?>
+                <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+            <?php else: ?>
+                <li class="page-item"><a class="page-link" href="?paginate=<?php echo $page_id-1; ?>">Previous</a></li>
+            <?php endif; ?>
+
+            <?php if ($page_id >= $max_page): ?>
+                <li class="page-item"><a class="page-link" href="#">Next</a></li>
+            <?php else: ?>
+                <li class="page-item"><a class="page-link" href="?paginate=<?php echo $page_id+1; ?>">Next</a></li>
+            <?php endif; ?>
+        </ul>
+    </nav>
+
     <!--Twitter-->
-    <a href="<?php echo home_url('/twitter'),"?user_name=",$twitter_name; ?>"><h3 class="sns-name mb-4">Twitter</h3></a>
+    <a href="<?php echo home_url('/twitter'), "?user_name=", $twitter_name; ?>"><h3 class="sns-name mb-4">Twitter</h3>
+    </a>
     <div class="top-twitter mb-5">
         <ul class="top-posts">
             <?php foreach ($twitter_posts as $item): ?>
