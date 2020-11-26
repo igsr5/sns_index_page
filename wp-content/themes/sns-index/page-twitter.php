@@ -6,7 +6,7 @@ require 'Twitter.php';
 
 $twitter_name = $_GET['user_name'];
 if (!$_GET['paginate']) {
-    $twitter = new Twitter($twitter_name, $_GET["is_reply"], 50);
+    $twitter = new Twitter($twitter_name, $_GET["is_reply"], 60);
 } else {
     $twitter = new Twitter($twitter_name, $_GET["is_reply"], 60);
 }
@@ -16,13 +16,14 @@ $twitter_posts = $twitter->getPosts();
 <div class="container">
     <div class="row head mt-4 pb-3">
         <div class="col-sm-7">
-            <h2 class="user-name"><?php the_title(); ?></h2>
+            <h2 class="user-name">@<?php echo $twitter_name; ?></h2>
 
             <?php if (!$_GET["is_reply"]): ?>
-                <a href="?is_reply=1">自分に関する投稿すべて表示</a>
+                <a href="?is_reply=1&user_name=<?php echo $twitter_name; ?>">自分に関する投稿すべて表示</a>
             <?php else: ?>
-                <a href="?is_reply=0">自分の投稿のみ表示</a>
+                <a href="?is_reply=0&user_name=<?php echo $twitter_name; ?>">自分の投稿のみ表示</a>
             <?php endif; ?>
+            <a class="ml-2" href="<?php echo home_url('/users'); ?>">一覧に戻る</a>
         </div>
 
         <div class="col-sm-5 mt-3">
@@ -36,7 +37,7 @@ $twitter_posts = $twitter->getPosts();
         <h3 class="sns-name mb-4">Twitter</h3>
         <ul class="posts">
             <?php foreach ($twitter_posts as $item): ?>
-                <li class="card">
+                <li class="card mb-5">
                     <article>
                         <a class="text"
                            href="https://twitter.com/<?php echo $item->user->screen_name; ?>/status/<?php echo $item->id; ?>">

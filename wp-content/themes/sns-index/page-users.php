@@ -3,29 +3,32 @@
 <?php
 require 'Paginate.php';
 require 'Twitter.php';
-$twitter_name = get_post_meta(get_the_ID(), 'twitter');
-if (!$_GET['paginate']) {
-    $twitter = new Twitter($twitter_name, $_GET["is_reply"], 50);
-} else {
-    $twitter = new Twitter($twitter_name, $_GET["is_reply"], 60);
-}
-$twitter_posts = $twitter->getPosts();
-// $post_num = 100;
 
-// if (!$_GET['paginate']) { // $_GET['page_id'] はURLに渡された現在のページ数
-//     global $paginate;
-//     $paginate = new Paginate($post_num, 1);
-// } else {
-//     global $paginate;
-//     $paginate = new Paginate($post_num, $_GET['paginate']);
-// }
-// $twitter_posts = $paginate->slice_array($twitter_posts);
+// 子ページ取得
+$args = array(
+    'post_parent' => get_the_ID(),
+    'post_status' => 'publish',
+    'post_type'   => 'page'
+);
+$children_array = get_children( $args );
+
+// ユーザーを一人選ぶ
+$user=array_slice($children_array,0,1);
+$user_id=$user[0]->ID;
+$twitter_name = get_post_custom($user_id)['twitter'][0];
+$page = get_page($user_id);
+
+
+$twitter = new Twitter($twitter_name, $_GET["is_reply"], 35);
+
+$twitter_posts = $twitter->getPosts();
+
 ?>
 
 <div class="container">
     <div class="row head mt-4 pb-3">
         <div class="col-sm-7">
-            <h2 class="user-name"><?php the_title(); ?></h2>
+            <h2 class="user-name"><?php echo $page->post_title; ?></h2>
 
             <?php if (!$_GET["is_reply"]): ?>
                 <a href="?is_reply=1">自分に関する投稿すべて表示</a>
@@ -39,13 +42,10 @@ $twitter_posts = $twitter->getPosts();
         </div>
     </div>
 
-    <!--paginate-->
-    <?php //get_template_part('paginate_content') ?>
-
     <!--Twitter-->
-    <div class="twitter mb-5">
-        <h3 class="sns-name mb-4">Twitter</h3>
-        <ul class="posts">
+    <a href="<?php echo home_url('/twitter'),"?user_name=",$twitter_name; ?>"><h3 class="sns-name mb-4">Twitter</h3></a>
+    <div class="top-twitter mb-5">
+        <ul class="top-posts">
             <?php foreach ($twitter_posts as $item): ?>
                 <li class="card">
                     <article>
@@ -74,8 +74,6 @@ $twitter_posts = $twitter->getPosts();
         </ul>
     </div>
 
-    <!--paginate-->
-    <?php //get_template_part('paginate_content') ?>
 </div>
 
 <?php get_footer(); ?>
