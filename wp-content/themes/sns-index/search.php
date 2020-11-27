@@ -1,4 +1,27 @@
-<?php get_header(); ?>
+<?php
+get_header();
+
+// 固定ページのPOST_IDから何ページ目か判定する
+function get_pagination($id)
+{
+    $users_page = get_page_by_path("users");
+    $users_page_id = $users_page->ID;
+    $args = array(
+        'post_parent' => $users_page_id,
+        'post_status' => 'publish',
+        'post_type' => 'page'
+    );
+    $children_array = get_children($args);
+    $i = 0;
+    foreach ($children_array as $child) {
+        if ($id == $child->ID) {
+            return $i;
+        }
+        $i++;
+    }
+}
+
+?>
 <div class="container">
     <div class="row head mt-4 pb-3">
         <div class="col-sm-7">
@@ -17,7 +40,11 @@
     <?php if (have_posts()): ?>
         <?php while (have_posts()): the_post(); ?>
             <div class="page_link">
-                <a href="<?php the_permalink(); ?>"><?php echo get_the_title(); ?></a>
+                <?php
+                $id = get_the_id();
+                $paginate_id = get_pagination($id);
+                ?>
+                <a href="<?php echo home_url('/users/?paginate='), $paginate_id; ?>"><?php echo get_the_title(); ?></a>
             </div>
         <?php endwhile; ?>
     <?php else: ?>

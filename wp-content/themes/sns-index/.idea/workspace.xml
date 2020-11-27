@@ -19,9 +19,12 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18466294-c8a7-43d5-8437-6306da96bf3b" name="Default Changelist" comment="update: usersでページネーションするようにした">
+    <list default="true" id="18466294-c8a7-43d5-8437-6306da96bf3b" name="Default Changelist" comment="update: index.php users配下を表示するように">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/assets/css/sns-index.css" beforeDir="false" afterPath="$PROJECT_DIR$/assets/css/sns-index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-users.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/search.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -159,7 +162,8 @@
     <MESSAGE value="update: Twitter単体は完成" />
     <MESSAGE value="update: users子ページ取得できるようにした" />
     <MESSAGE value="update: usersでページネーションするようにした" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: usersでページネーションするようにした" />
+    <MESSAGE value="update: index.php users配下を表示するように" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: index.php users配下を表示するように" />
   </component>
   <component name="WindowStateProjectService">
     <state x="465" y="196" key="FileChooserDialogImpl" timestamp="1605140984242">
@@ -170,10 +174,10 @@
       <screen x="0" y="0" width="1368" height="882" />
     </state>
     <state x="277" y="174" key="Vcs.Push.Dialog.v2/0.0.1368.882@0.0.1368.882" timestamp="1605071748902" />
-    <state x="996" y="-859" width="944" height="808" key="search.everywhere.popup" timestamp="1606391613429">
+    <state x="996" y="-859" width="944" height="808" key="search.everywhere.popup" timestamp="1606481509589">
       <screen x="509" y="-1080" width="1920" height="1050" />
     </state>
-    <state x="996" y="-859" width="944" height="808" key="search.everywhere.popup/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1606391613429" />
+    <state x="996" y="-859" width="944" height="808" key="search.everywhere.popup/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1606481509589" />
     <state x="347" y="186" width="672" height="678" key="search.everywhere.popup/0.0.1368.882@0.0.1368.882" timestamp="1606362573655" />
   </component>
 </project>
