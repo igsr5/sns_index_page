@@ -30,13 +30,37 @@ ul {
     justify-content: space-between;
 }
 
-.posts > li {
-    width: 24%;
+.top-posts{
+    min-width: 7500px;
+    display: flex;
+}
+
+.top-posts >li{
+    width: 250px;
+    overflow: hidden;
     height: 300px;
+    margin-right: 10px;
     position: relative;
 }
 
+.posts > li {
+    width: 250px;
+    overflow: hidden;
+    height: 300px;
+    margin-right: 10px;
+    position: relative;
+}
+
+
+
+.top-twitter{
+    overflow: scroll;
+}
+
 .posts  article {
+    padding: 10px;
+}
+.top-posts  article {
     padding: 10px;
 }
 

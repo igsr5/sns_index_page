@@ -25,9 +25,8 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="update index.php">
+    <list default="true" id="de28dc07-e173-471e-b527-1d719df7f078" name="Default Changelist" comment="update search.php">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/wp-content/themes/sns-index/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/wp-content/themes/sns-index/search.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -40,7 +39,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="main" />
+        <entry key="$PROJECT_DIR$" value="top-page" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -53,7 +52,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../twitter" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -88,6 +87,7 @@
       <workItem from="1605273136586" duration="32000" />
       <workItem from="1605353713933" duration="1307000" />
       <workItem from="1605407719708" duration="570000" />
+      <workItem from="1605441464099" duration="752000" />
     </task>
     <task id="LOCAL-00001" summary="add: 作業用テーマSNS-sample追加">
       <created>1604554636250</created>
@@ -227,10 +227,10 @@
       <screen x="509" y="-1080" width="1920" height="1050" />
     </state>
     <state x="1254" y="-864" key="#com.intellij.openapi.keymap.impl.ui.EditKeymapsDialog/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1604725694018" />
-    <state x="1162" y="-847" key="FileChooserDialogImpl" timestamp="1605273166466">
-      <screen x="509" y="-1080" width="1920" height="1050" />
+    <state x="465" y="196" key="FileChooserDialogImpl" timestamp="1605441499428">
+      <screen x="0" y="0" width="1368" height="882" />
     </state>
-    <state x="465" y="196" key="FileChooserDialogImpl/0.0.1368.882/509.-1080.1920.1050@0.0.1368.882" timestamp="1605007020937" />
+    <state x="465" y="196" key="FileChooserDialogImpl/0.0.1368.882/509.-1080.1920.1050@0.0.1368.882" timestamp="1605441499428" />
     <state x="1162" y="-847" key="FileChooserDialogImpl/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1605273166466" />
     <state x="465" y="196" key="FileChooserDialogImpl/0.0.1368.882@0.0.1368.882" timestamp="1605243470445" />
     <state width="1877" height="264" key="GridCell.Tab.0.bottom" timestamp="1605409572868">
