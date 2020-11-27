@@ -39,6 +39,7 @@ $twitter_posts = $twitter->getPosts();
             <?php else: ?>
                 <a href="?is_reply=0">自分の投稿のみ表示</a>
             <?php endif; ?>
+            <a class="ml-4" href="<?php echo home_url(); ?>">ユーザー一覧に戻る</a>
         </div>
 
         <div class="col-sm-5 mt-3">
