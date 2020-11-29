@@ -27,9 +27,10 @@ $children_array = get_children($args);
         <?php
         $i = 0;
         foreach ($children_array as $child):
+            $paginate= floor($i/3);
             ?>
             <div>
-                <a class="mt-3 d-block lead" href="<?php echo home_url('/users/?paginate='), $i; ?>"><?php echo $child->post_title ?></a>
+                <a class="mt-3 d-block lead" href="<?php echo home_url('/users/?paginate='), $paginate; ?>"><?php echo $child->post_title ?></a>
             </div>
             <?php
             $i++;

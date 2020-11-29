@@ -19,8 +19,10 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18466294-c8a7-43d5-8437-6306da96bf3b" name="Default Changelist" comment="update: index.php users配下を表示するように">
+    <list default="true" id="18466294-c8a7-43d5-8437-6306da96bf3b" name="Default Changelist" comment="update: page.php にアクセスしたらトップページに飛ぶようにした">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-users.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-users.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/page.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,6 +83,8 @@
       <workItem from="1606355548518" duration="4402000" />
       <workItem from="1606389485779" duration="5633000" />
       <workItem from="1606480550236" duration="84000" />
+      <workItem from="1606616957593" duration="156000" />
+      <workItem from="1606617641312" duration="1663000" />
     </task>
     <task id="LOCAL-00001" summary="update: replyを含むかどうか選べるようにする">
       <created>1604888740550</created>
@@ -138,7 +142,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606483180653</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="update: page.php にアクセスしたらトップページに飛ぶようにした">
+      <created>1606483589304</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606483589304</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -167,7 +178,8 @@
     <MESSAGE value="update: users子ページ取得できるようにした" />
     <MESSAGE value="update: usersでページネーションするようにした" />
     <MESSAGE value="update: index.php users配下を表示するように" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: index.php users配下を表示するように" />
+    <MESSAGE value="update: page.php にアクセスしたらトップページに飛ぶようにした" />
+    <option name="LAST_COMMIT_MESSAGE" value="update: page.php にアクセスしたらトップページに飛ぶようにした" />
   </component>
   <component name="WindowStateProjectService">
     <state x="465" y="196" key="FileChooserDialogImpl" timestamp="1605140984242">
