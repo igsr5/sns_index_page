@@ -42,7 +42,7 @@ function get_pagination($id)
             <div class="page_link">
                 <?php
                 $id = get_the_id();
-                $paginate_id = get_pagination($id);
+                $paginate_id = get_pagination($id); //ページネーションの何ページ目か
                 ?>
                 <a href="<?php echo home_url('/users/?paginate='), $paginate_id; ?>"><?php echo get_the_title(); ?></a>
             </div>

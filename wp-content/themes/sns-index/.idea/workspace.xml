@@ -19,8 +19,16 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18466294-c8a7-43d5-8437-6306da96bf3b" name="Default Changelist" comment="fixed page-usersでは3人ごとに表示されるように">
+    <list default="true" id="18466294-c8a7-43d5-8437-6306da96bf3b" name="Default Changelist" comment="fixed 検索結果が正しくなるように">
+      <change afterPath="$PROJECT_DIR$/paginate-content.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twitter-content.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Paginate.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Twitter.php" beforeDir="false" afterPath="$PROJECT_DIR$/Twitter.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/front_page.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-users.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-users.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/paginate_content.php" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/search.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -35,7 +43,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$/../../.." value="update-index" />
+        <entry key="$PROJECT_DIR$/../../.." value="main" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
@@ -82,7 +90,7 @@
       <workItem from="1606389485779" duration="5633000" />
       <workItem from="1606480550236" duration="84000" />
       <workItem from="1606616957593" duration="156000" />
-      <workItem from="1606617641312" duration="1854000" />
+      <workItem from="1606617641312" duration="2973000" />
     </task>
     <task id="LOCAL-00001" summary="update: replyを含むかどうか選べるようにする">
       <created>1604888740550</created>
@@ -154,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606619457748</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="fixed 検索結果が正しくなるように">
+      <created>1606619793277</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1606619793277</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -185,17 +200,18 @@
     <MESSAGE value="update: index.php users配下を表示するように" />
     <MESSAGE value="update: page.php にアクセスしたらトップページに飛ぶようにした" />
     <MESSAGE value="fixed page-usersでは3人ごとに表示されるように" />
-    <option name="LAST_COMMIT_MESSAGE" value="fixed page-usersでは3人ごとに表示されるように" />
+    <MESSAGE value="fixed 検索結果が正しくなるように" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed 検索結果が正しくなるように" />
   </component>
   <component name="WindowStateProjectService">
     <state x="465" y="196" key="FileChooserDialogImpl" timestamp="1605140984242">
       <screen x="0" y="0" width="1368" height="882" />
     </state>
     <state x="465" y="196" key="FileChooserDialogImpl/0.0.1368.882@0.0.1368.882" timestamp="1605140984242" />
-    <state x="277" y="174" key="Vcs.Push.Dialog.v2" timestamp="1605071748902">
+    <state x="277" y="174" key="Vcs.Push.Dialog.v2" timestamp="1606619797243">
       <screen x="0" y="0" width="1368" height="882" />
     </state>
-    <state x="277" y="174" key="Vcs.Push.Dialog.v2/0.0.1368.882@0.0.1368.882" timestamp="1605071748902" />
+    <state x="277" y="174" key="Vcs.Push.Dialog.v2/0.0.1368.882@0.0.1368.882" timestamp="1606619797243" />
     <state x="348" y="187" width="672" height="678" key="search.everywhere.popup" timestamp="1606619475629">
       <screen x="0" y="0" width="1368" height="882" />
     </state>
