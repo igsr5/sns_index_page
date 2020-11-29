@@ -19,11 +19,9 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="18466294-c8a7-43d5-8437-6306da96bf3b" name="Default Changelist" comment="update: page.php にアクセスしたらトップページに飛ぶようにした">
+    <list default="true" id="18466294-c8a7-43d5-8437-6306da96bf3b" name="Default Changelist" comment="fixed page-usersでは3人ごとに表示されるように">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.php" beforeDir="false" afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page-users.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-users.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/page.php" beforeDir="false" afterPath="$PROJECT_DIR$/page.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/search.php" beforeDir="false" afterPath="$PROJECT_DIR$/search.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,7 +82,7 @@
       <workItem from="1606389485779" duration="5633000" />
       <workItem from="1606480550236" duration="84000" />
       <workItem from="1606616957593" duration="156000" />
-      <workItem from="1606617641312" duration="1663000" />
+      <workItem from="1606617641312" duration="1854000" />
     </task>
     <task id="LOCAL-00001" summary="update: replyを含むかどうか選べるようにする">
       <created>1604888740550</created>
@@ -149,7 +147,14 @@
       <option name="project" value="LOCAL" />
       <updated>1606483589304</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="fixed page-usersでは3人ごとに表示されるように">
+      <created>1606619457748</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606619457748</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +184,8 @@
     <MESSAGE value="update: usersでページネーションするようにした" />
     <MESSAGE value="update: index.php users配下を表示するように" />
     <MESSAGE value="update: page.php にアクセスしたらトップページに飛ぶようにした" />
-    <option name="LAST_COMMIT_MESSAGE" value="update: page.php にアクセスしたらトップページに飛ぶようにした" />
+    <MESSAGE value="fixed page-usersでは3人ごとに表示されるように" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed page-usersでは3人ごとに表示されるように" />
   </component>
   <component name="WindowStateProjectService">
     <state x="465" y="196" key="FileChooserDialogImpl" timestamp="1605140984242">
@@ -190,10 +196,10 @@
       <screen x="0" y="0" width="1368" height="882" />
     </state>
     <state x="277" y="174" key="Vcs.Push.Dialog.v2/0.0.1368.882@0.0.1368.882" timestamp="1605071748902" />
-    <state x="996" y="-859" width="944" height="808" key="search.everywhere.popup" timestamp="1606481509589">
-      <screen x="509" y="-1080" width="1920" height="1050" />
+    <state x="348" y="187" width="672" height="678" key="search.everywhere.popup" timestamp="1606619475629">
+      <screen x="0" y="0" width="1368" height="882" />
     </state>
     <state x="996" y="-859" width="944" height="808" key="search.everywhere.popup/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1606481509589" />
-    <state x="347" y="186" width="672" height="678" key="search.everywhere.popup/0.0.1368.882@0.0.1368.882" timestamp="1606362573655" />
+    <state x="348" y="187" width="672" height="678" key="search.everywhere.popup/0.0.1368.882@0.0.1368.882" timestamp="1606619475629" />
   </component>
 </project>

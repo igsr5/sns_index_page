@@ -15,7 +15,7 @@ function get_pagination($id)
     $i = 0;
     foreach ($children_array as $child) {
         if ($id == $child->ID) {
-            return $i;
+            return floor($i/3);
         }
         $i++;
     }
