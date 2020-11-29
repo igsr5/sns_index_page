@@ -51,17 +51,20 @@ class Twitter
         }
     }
 
+    // 投稿を取得する
     public function getPosts()
     {
         return $this->posts;
     }
 
+    // 先頭にRTがついているか判別する
     public function is_RT($tweet)
     {
         $text=substr($tweet,0,2);
         return $text=='RT';
     }
 
+    // リツイートの時、色を変えるためテキストを差し替える
     public function add_color_rts($tweet)
     {
         $text=substr_replace($tweet,"<span class='rt'>RT",0,2);
