@@ -1,0 +1,108 @@
+# Translation of Plugins - WP Mail SMTP by WPForms - Stable (latest release) in Japanese
+# This file is distributed under the same license as the Plugins - WP Mail SMTP by WPForms - Stable (latest release) package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2020-03-23 15:14:10+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: GlotPress/3.0.0-alpha\n"
+"Language: ja_JP\n"
+"Project-Id-Version: Plugins - WP Mail SMTP by WPForms - Stable (latest release)\n"
+
+#: src/Admin/Pages/TestTab.php:534 src/Admin/Pages/TestTab.php:559
+#: src/Admin/Pages/TestTab.php:661
+msgid "This means your web server was unable to connect to the host server."
+msgstr "これは、Web サーバーがホストサーバーに接続できなかったことを意味します。"
+
+#: src/Providers/SMTPcom/Options.php:83 src/Providers/Sendgrid/Options.php:57
+#: src/Providers/PepipostAPI/Options.php:88
+#: src/Providers/Sendinblue/Options.php:76
+msgid "API Key"
+msgstr "API キー"
+
+#: src/Admin/Pages/SettingsTab.php:36
+msgid "General"
+msgstr "一般"
+
+#: src/Providers/OptionsAbstract.php:210
+msgid "None"
+msgstr "なし"
+
+#: src/Admin/Pages/SettingsTab.php:85
+msgid "Mail"
+msgstr "メール"
+
+#: src/Providers/OptionsAbstract.php:265 src/Providers/OptionsAbstract.php:287
+#: src/Admin/Pages/TestTab.php:87
+msgid "Off"
+msgstr "オフ"
+
+#: src/Admin/PageAbstract.php:81 src/Admin/Area.php:312
+msgid "Save Settings"
+msgstr "設定を保存"
+
+#: src/Admin/Pages/MiscTab.php:24
+msgid "Misc"
+msgstr "その他"
+
+#: src/Admin/Pages/About.php:297 src/Admin/Area.php:402
+msgid "Active"
+msgstr "有効"
+
+#: src/Admin/Pages/About.php:316
+msgid "Not Installed"
+msgstr "未インストール"
+
+#: src/Admin/Pages/SettingsTab.php:272
+msgid "Dismiss this notice"
+msgstr "この通知を非表示"
+
+#: src/SiteHealth.php:92
+msgid "Version"
+msgstr "バージョン"
+
+#: src/Admin/Pages/SettingsTab.php:201
+msgid "Mailer"
+msgstr "メーラー"
+
+#: src/Admin/Pages/TestTab.php:59
+msgid "Send a Test Email"
+msgstr "テストメールの送信"
+
+#: src/Admin/Area.php:220 src/Admin/Area.php:221 src/Admin/Area.php:864
+msgid "Settings"
+msgstr "設定"
+
+#: src/Providers/OptionsAbstract.php:200
+msgid "Encryption"
+msgstr "暗号化"
+
+#: src/Admin/Pages/SettingsTab.php:92
+msgid "From Email"
+msgstr "送信元アドレス"
+
+#: src/Admin/Pages/SettingsTab.php:138
+msgid "From Name"
+msgstr "送信者名"
+
+#: src/Providers/OptionsAbstract.php:276
+msgid "Authentication"
+msgstr "認証"
+
+#: src/Admin/Pages/SettingsTab.php:179
+msgid "Return Path"
+msgstr "返信先"
+
+#: src/Providers/OptionsAbstract.php:186
+msgid "SMTP Host"
+msgstr "SMTP ホスト"
+
+#: src/Providers/OptionsAbstract.php:240
+msgid "SMTP Port"
+msgstr "SMTP ポート"
+
+#: src/Admin/Pages/SettingsTab.php:188
+msgid "Set the return-path to match the From Email"
+msgstr "送信元アドレスを返信先 (return-path) として設定"

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="18466294-c8a7-43d5-8437-6306da96bf3b" name="Default Changelist" comment="ツイッター表示部分を別ファイルに分離した">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/page-twitter.php" beforeDir="false" afterPath="$PROJECT_DIR$/page-twitter.php" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/../../.." value="main" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../../.." />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration">
+    <include_path>
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/abraham/twitteroauth" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1k0vG5eeNfggAssUI6o5WBLundY" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="18466294-c8a7-43d5-8437-6306da96bf3b" name="Default Changelist" comment="" />
+      <created>1604850224510</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1604850224510</updated>
+      <workItem from="1604850225721" duration="601000" />
+      <workItem from="1604887980331" duration="1583000" />
+      <workItem from="1604897692469" duration="46000" />
+      <workItem from="1605056696605" duration="1226000" />
+      <workItem from="1605069186318" duration="2473000" />
+      <workItem from="1605140554845" duration="428000" />
+      <workItem from="1606355548518" duration="4402000" />
+      <workItem from="1606389485779" duration="5633000" />
+      <workItem from="1606480550236" duration="84000" />
+      <workItem from="1606616957593" duration="156000" />
+      <workItem from="1606617641312" duration="2973000" />
+    </task>
+    <task id="LOCAL-00001" summary="update: replyを含むかどうか選べるようにする">
+      <created>1604888740550</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604888740550</updated>
+    </task>
+    <task id="LOCAL-00002" summary="fixed: カスタムフィールドが上手く取得できていなったバグを修正&#10;content-twitter.php を削除">
+      <created>1605070099014</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605070099014</updated>
+    </task>
+    <task id="LOCAL-00003" summary="add: ツイートがリツイートかどうか判断する関数を追加　Twitter-&gt;is_RT()">
+      <created>1605070955646</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605070955646</updated>
+    </task>
+    <task id="LOCAL-00004" summary="update: トップページで投稿が見れるようにした">
+      <created>1606360315334</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1606360315335</updated>
+    </task>
+    <task id="LOCAL-00005" summary="update: ツイッター専用ページを作成">
+      <created>1606390410432</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1606390410432</updated>
+    </task>
+    <task id="LOCAL-00006" summary="update: users子ページ取得できるようにした">
+      <created>1606393523053</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1606393523054</updated>
+    </task>
+    <task id="LOCAL-00007" summary="update: usersでページネーションするようにした">
+      <created>1606399022795</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1606399022799</updated>
+    </task>
+    <task id="LOCAL-00008" summary="update: search.phpでページ数でリンクに飛ぶように">
+      <created>1606483180653</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606483180653</updated>
+    </task>
+    <task id="LOCAL-00009" summary="update: page.php にアクセスしたらトップページに飛ぶようにした">
+      <created>1606483589304</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1606483589304</updated>
+    </task>
+    <task id="LOCAL-00010" summary="fixed page-usersでは3人ごとに表示されるように">
+      <created>1606619457748</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1606619457748</updated>
+    </task>
+    <task id="LOCAL-00011" summary="fixed 検索結果が正しくなるように">
+      <created>1606619793277</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1606619793277</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="update: replyを含むかどうか選べるようにする" />
+    <MESSAGE value="fixed: カスタムフィールドが上手く取得できていなったバグを修正&#10;content-twitter.php を削除" />
+    <MESSAGE value="add: ツイートがリツイートかどうか判断する関数を追加　Twitter-&gt;is_RT()" />
+    <MESSAGE value="update: トップページで投稿が見れるようにした" />
+    <MESSAGE value="update: ツイッター専用ページを作成" />
+    <MESSAGE value="update: index.phpをpage-users.phpに移した" />
+    <MESSAGE value="update: Twitter単体は完成" />
+    <MESSAGE value="update: users子ページ取得できるようにした" />
+    <MESSAGE value="update: usersでページネーションするようにした" />
+    <MESSAGE value="update: index.php users配下を表示するように" />
+    <MESSAGE value="update: page.php にアクセスしたらトップページに飛ぶようにした" />
+    <MESSAGE value="fixed page-usersでは3人ごとに表示されるように" />
+    <MESSAGE value="fixed 検索結果が正しくなるように" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixed 検索結果が正しくなるように" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="465" y="196" key="FileChooserDialogImpl" timestamp="1605140984242">
+      <screen x="0" y="0" width="1368" height="882" />
+    </state>
+    <state x="465" y="196" key="FileChooserDialogImpl/0.0.1368.882@0.0.1368.882" timestamp="1605140984242" />
+    <state x="277" y="174" key="Vcs.Push.Dialog.v2" timestamp="1606619797243">
+      <screen x="0" y="0" width="1368" height="882" />
+    </state>
+    <state x="277" y="174" key="Vcs.Push.Dialog.v2/0.0.1368.882@0.0.1368.882" timestamp="1606619797243" />
+    <state x="349" y="188" width="672" height="678" key="search.everywhere.popup" timestamp="1606620876566">
+      <screen x="0" y="0" width="1368" height="882" />
+    </state>
+    <state x="996" y="-859" width="944" height="808" key="search.everywhere.popup/0.0.1368.882/509.-1080.1920.1050@509.-1080.1920.1050" timestamp="1606481509589" />
+    <state x="349" y="188" width="672" height="678" key="search.everywhere.popup/0.0.1368.882@0.0.1368.882" timestamp="1606620876566" />
+  </component>
+</project>
