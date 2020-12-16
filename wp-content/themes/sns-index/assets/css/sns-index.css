@@ -31,12 +31,12 @@ ul {
 }
 
 .top-posts{
-    min-width: 7500px;
     display: flex;
+    width: fit-content;
 }
 
 .top-posts >li{
-    width: 250px;
+    width: 300px;
     overflow: hidden;
     height: 300px;
     margin-right: 10px;
