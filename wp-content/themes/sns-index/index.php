@@ -9,10 +9,10 @@ global $twitter;
 global $page_id;
 global $max_page;
 
-$page_ID = get_page_by_path('/users')->ID;
+$page = get_page_by_path('/users');
 // 子ページ取得
 $args = array(
-    'post_parent' => $page_ID, 
+    'post_parent' => $page->ID, 
     'post_status' => 'publish',
     'post_type' => 'page'
 );
@@ -26,13 +26,13 @@ $page_start = $page_id * 3;
 
 // ユーザーを3人選ぶ
 $users = array_slice($children_array, $page_start, 3);
-
 ?>
 
     <div class="container">
         <div class="row head mt-4 pb-3">
             <div class="col-sm-7">
-                <h2 class="user-name"><?php the_title(); ?></h2>
+                <h2 class="user-name"><?php echo $page->post_title
+                ; ?></h2>
 
                 <?php if (!$_GET["is_reply"]): ?>
                     <a href="?is_reply=1">Includeing other users' posts</a>
