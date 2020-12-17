@@ -1,24 +1,9 @@
-<?php get_header(); ?>
-
 <?php
 require 'Twitter.php';
+get_header(); 
+?>
 
-global $twitter_posts;
-global $twitter_name;
-global $twitter;
-global $page_id;
-global $max_page;
-
-$page = get_page_by_path('/users');
-// 子ページ取得
-$args = array(
-    'post_parent' => $page->ID, 
-    'post_status' => 'publish',
-    'post_type' => 'page'
-);
-$children_array = get_children($args);
-
-
+<?php
 // ページネーション関係
 $page_id = $_GET['paginate'];
 $max_page = count($children_array) / 3 - 1;
@@ -31,8 +16,7 @@ $users = array_slice($children_array, $page_start, 3);
     <div class="container">
         <div class="row head mt-4 pb-3">
             <div class="col-sm-7">
-                <h2 class="user-name"><?php echo $page->post_title
-                ; ?></h2>
+                <h2 class="user-name"><?php echo $page->post_title; ?></h2>
 
                 <?php if (!$_GET["is_reply"]): ?>
                     <a href="?is_reply=1">Includeing other users' posts</a>

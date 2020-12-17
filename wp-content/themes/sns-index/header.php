@@ -1,3 +1,4 @@
+<?php get_template_part("setting"); ?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -11,4 +12,6 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/sns-index.css">
     </head>
     <body>
-        <header class="mb-5 pt-3"></header>
+        <header class="mb-5 pt-3">
+
+        </header>
