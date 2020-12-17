@@ -39,7 +39,6 @@ $users = array_slice($children_array, $page_start, 3);
                 <?php else: ?>
                     <a href="?is_reply=0">Only users' posts</a>
                 <?php endif; ?>
-                <a class="ml-4" href="<?php echo home_url(); ?>">Go Back to Toppage</a>
             </div>
 
             <div class="col-sm-5 mt-3">
