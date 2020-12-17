@@ -1,41 +1,67 @@
 <?php get_header(); ?>
 
 <?php
-// 子ページ取得
+require 'Twitter.php';
 
-$users_page = get_page_by_path("users");
-$users_page_id = $users_page->ID;
+global $twitter_posts;
+global $twitter_name;
+global $twitter;
+global $page_id;
+global $max_page;
+
+$page_ID = get_page_by_path('/users')->ID;
+// 子ページ取得
 $args = array(
-    'post_parent' => $users_page_id,
+    'post_parent' => $page_ID, 
     'post_status' => 'publish',
     'post_type' => 'page'
 );
 $children_array = get_children($args);
+
+
+// ページネーション関係
+$page_id = $_GET['paginate'];
+$max_page = count($children_array) / 3 - 1;
+$page_start = $page_id * 3;
+
+// ユーザーを3人選ぶ
+$users = array_slice($children_array, $page_start, 3);
+
 ?>
 
     <div class="container">
         <div class="row head mt-4 pb-3">
             <div class="col-sm-7">
-                <h2 class="user-name">トップページ</h2>
+                <h2 class="user-name"><?php the_title(); ?></h2>
+
+                <?php if (!$_GET["is_reply"]): ?>
+                    <a href="?is_reply=1">Includeing other users' posts</a>
+                <?php else: ?>
+                    <a href="?is_reply=0">Only users' posts</a>
+                <?php endif; ?>
+                <a class="ml-4" href="<?php echo home_url(); ?>">Go Back to Toppage</a>
             </div>
 
             <div class="col-sm-5 mt-3">
                 <?php get_search_form(); ?>
             </div>
         </div>
+        <?php get_template_part("paginate-content"); ?>
 
-        <?php
-        $i = 0;
-        foreach ($children_array as $child):
-            $paginate_id= floor($i/3); //ページネーションの何ページ目か
-            ?>
-            <div>
-                <a class="mt-3 d-block lead" href="<?php echo home_url('/users/?paginate='), $paginate_id; ?>"><?php echo $child->post_title ?></a>
-            </div>
-            <?php
-            $i++;
-        endforeach;
+		  <?php
+            foreach ($users as $user):
+                $user_id = $user->ID;
+                $twitter_name = get_post_custom($user_id)['twitter'][0];
+                $page = get_page($user_id);
+                $twitter = new Twitter($twitter_name, $_GET["is_reply"], 200);
+                $twitter_posts = $twitter->getPosts();
         ?>
 
+			<h2 class="user-name"><?php echo $page->post_title; ?></h2>
+			<!--Twitter-->
+			<?php get_template_part("twitter-content"); ?>
+			<hr>
+		<?php endforeach; ?>
     </div>
+
 <?php get_footer(); ?>
