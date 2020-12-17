@@ -11,9 +11,11 @@ ul {
     padding: 0;
     list-style: none;
 }
-
-.head {
-    border-bottom: 1px solid #000000;
+header li{
+  align-items: center; 
+}
+header li a{
+  font-size: 2.7rem; 
 }
 
 .user-name {

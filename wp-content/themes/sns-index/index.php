@@ -13,10 +13,10 @@ $page_start = $page_id * 3;
 $users = array_slice($children_array, $page_start, 3);
 ?>
 
-    <div class="container">
-        <div class="row head mt-4 pb-3">
+    <div class="container-fluid">
+        <div class="row head mt-3 pb-3">
             <div class="col-sm-7">
-                <h2 class="user-name"><?php echo $page->post_title; ?></h2>
+                <h2 class="user-name">Elected Officials<h2>
 
                 <?php if (!$_GET["is_reply"]): ?>
                     <a href="?is_reply=1">Includeing other users' posts</a>
@@ -29,7 +29,6 @@ $users = array_slice($children_array, $page_start, 3);
                 <?php get_search_form(); ?>
             </div>
         </div>
-        <?php get_template_part("paginate-content"); ?>
 
 		  <?php
             foreach ($users as $user):
@@ -45,6 +44,8 @@ $users = array_slice($children_array, $page_start, 3);
 			<?php get_template_part("twitter-content"); ?>
 			<hr>
 		<?php endforeach; ?>
+
+        <?php get_template_part("paginate-content"); ?>
     </div>
 
 <?php get_footer(); ?>

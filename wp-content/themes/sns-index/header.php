@@ -1,4 +1,4 @@
-<?php get_template_part("setting"); ?>
+<?php require 'setting.php';?>
 <!doctype html>
 <html lang="en">
     <head>
@@ -12,6 +12,15 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/sns-index.css">
     </head>
     <body>
-        <header class="mb-5 pt-3">
-
+        <header class="mb-5 pt-3 pb-3 border-bottom">
+          <div class="container-fluid">
+            <div class="row">
+              <a class="user-name col-3"><?php echo $page->post_title; ?></a>
+              <ul class="col-9 d-flex justify-content-end">
+                <li class="ml-5 d-flex align-items-center"><a>Elected Officials</a></li>
+                <li class="ml-5 d-flex align-items-center"><a>Lobbyists</a></li>
+                <li class="ml-5 d-flex align-items-center"><a>Staff</a></li>
+              </ul>
+            </div>
+          </div>
         </header>
