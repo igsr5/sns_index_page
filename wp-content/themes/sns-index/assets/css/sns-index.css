@@ -11,11 +11,19 @@ ul {
     padding: 0;
     list-style: none;
 }
+header{
+  padding: 15px;
+}
+header .container-fluid{
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid; 
+}
 header li{
   align-items: center; 
 }
 header li a{
-  font-size: 2.7rem; 
+  font-size: 2.4rem; 
 }
 
 .user-name {
