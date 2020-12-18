@@ -36,7 +36,7 @@ $users = array_slice($children_array, $page_start, 3);
         $twitter = new Twitter($twitter_name, $_GET["is_reply"], 200);
         $twitter_posts = $twitter->getPosts();
       ?>
-      <div class="user-content mb-5">
+      <div class="user-content mb-3">
         <h2><?php echo $page->post_title; ?></h2>
         <!--Twitter-->
         <div class="user-sns">
@@ -45,7 +45,9 @@ $users = array_slice($children_array, $page_start, 3);
       </div>
 		<?php endforeach; ?>
 
+    <div class="d-flex justify-content-center">
     <?php get_template_part("paginate-content"); ?>
+    </div>
     </div>
 
 <?php get_footer(); ?>
