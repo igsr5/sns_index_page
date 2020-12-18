@@ -36,10 +36,13 @@ $users = array_slice($children_array, $page_start, 3);
         $twitter = new Twitter($twitter_name, $_GET["is_reply"], 200);
         $twitter_posts = $twitter->getPosts();
       ?>
-
-			<h2><?php echo $page->post_title; ?></h2>
-			<!--Twitter-->
-			<?php get_template_part("twitter-content"); ?>
+      <div class="user-content mb-5">
+        <h2><?php echo $page->post_title; ?></h2>
+        <!--Twitter-->
+        <div class="user-sns">
+          <?php get_template_part("twitter-content"); ?>
+        </div>
+      </div>
 		<?php endforeach; ?>
 
     <?php get_template_part("paginate-content"); ?>

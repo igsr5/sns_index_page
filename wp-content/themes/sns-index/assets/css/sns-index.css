@@ -41,6 +41,18 @@ header li a{
     font-size: 3rem;
 }
 
+.user-content{
+  padding-left: 30px;
+}
+
+.user-sns>div {
+  padding-left: 20px;
+}
+
+.user-sns{
+  padding-left: 20px;
+}
+
 .posts {
     display: flex;
     flex-wrap: wrap;
