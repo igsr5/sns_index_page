@@ -38,11 +38,15 @@ header li a{
   font-size: 3rem;
 }
 .sns-name {
-    font-size: 3rem;
+    font-size: 2rem;
 }
 
 .user-content{
   padding-left: 30px;
+}
+
+.user-content h2{
+  font-size: 2.5rem;
 }
 
 .user-sns>div {
