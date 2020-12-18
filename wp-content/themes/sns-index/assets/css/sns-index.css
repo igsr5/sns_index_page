@@ -102,12 +102,10 @@ header li a{
 }
 
 .created_at {
+    margin-top: 15px;
     font-size: 14px;
     color: #8f8f8f;
     text-align: right;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
 }
 
 .post_photo{
