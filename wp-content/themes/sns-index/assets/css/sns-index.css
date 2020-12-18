@@ -30,6 +30,13 @@ header li a{
     font-size: 4rem;
 }
 
+.body{
+  padding-left: 40px;
+}
+
+.category-name{
+  font-size: 3rem;
+}
 .sns-name {
     font-size: 3rem;
 }

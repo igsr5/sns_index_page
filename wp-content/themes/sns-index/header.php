@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/sns-index.css">
     </head>
     <body>
-        <header class="mb-5">
+        <header>
           <div class="container-fluid">
             <div class="row">
               <a class="user-name col-3"><?php echo $page->post_title; ?></a>
