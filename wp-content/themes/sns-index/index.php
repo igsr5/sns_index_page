@@ -1,41 +1,53 @@
-<?php get_header(); ?>
-
 <?php
-// 子ページ取得
-
-$users_page = get_page_by_path("users");
-$users_page_id = $users_page->ID;
-$args = array(
-    'post_parent' => $users_page_id,
-    'post_status' => 'publish',
-    'post_type' => 'page'
-);
-$children_array = get_children($args);
+require 'Twitter.php';
+get_header(); 
 ?>
 
-    <div class="container">
-        <div class="row head mt-4 pb-3">
-            <div class="col-sm-7">
-                <h2 class="user-name">トップページ</h2>
-            </div>
+<?php
+// ページネーション関係
+$page_id = $_GET['paginate'];
+$max_page = count($children_array) / 3 - 1;
+$page_start = $page_id * 3;
 
+// ユーザーを3人選ぶ
+$users = array_slice($children_array, $page_start, 3);
+?>
+
+    <div class="body container-fluid">
+        <div class="row mt-4 mb-5">
+            <div class="col-sm-7">
+                <h2 class="category-name">Elected Officials<h2>
+                <?php if (!$_GET["is_reply"]): ?>
+                    <a href="?is_reply=1">Includeing other users' posts</a>
+                <?php else: ?>
+                    <a href="?is_reply=0">Only users' posts</a>
+                <?php endif; ?>
+            </div>
             <div class="col-sm-5 mt-3">
                 <?php get_search_form(); ?>
             </div>
         </div>
 
-        <?php
-        $i = 0;
-        foreach ($children_array as $child):
-            $paginate_id= floor($i/3); //ページネーションの何ページ目か
-            ?>
-            <div>
-                <a class="mt-3 d-block lead" href="<?php echo home_url('/users/?paginate='), $paginate_id; ?>"><?php echo $child->post_title ?></a>
-            </div>
-            <?php
-            $i++;
-        endforeach;
-        ?>
+		  <?php
+      foreach ($users as $user):
+        $user_id = $user->ID;
+        $twitter_name = get_post_custom($user_id)['twitter'][0];
+        $page = get_page($user_id);
+        $twitter = new Twitter($twitter_name, $_GET["is_reply"], 200);
+        $twitter_posts = $twitter->getPosts();
+      ?>
+      <div class="user-content mb-3">
+        <h2><?php echo $page->post_title; ?></h2>
+        <!--Twitter-->
+        <div class="user-sns">
+          <?php get_template_part("twitter-content"); ?>
+        </div>
+      </div>
+		<?php endforeach; ?>
 
+    <div class="d-flex justify-content-center">
+    <?php get_template_part("paginate-content"); ?>
     </div>
+    </div>
+
 <?php get_footer(); ?>

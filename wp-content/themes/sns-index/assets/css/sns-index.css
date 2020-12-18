@@ -11,17 +11,50 @@ ul {
     padding: 0;
     list-style: none;
 }
-
-.head {
-    border-bottom: 1px solid #000000;
+header{
+  padding: 15px;
+}
+header .container-fluid{
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+  border-left: 1px solid; 
+}
+header li{
+  align-items: center; 
+}
+header li a{
+  font-size: 2.4rem; 
 }
 
 .user-name {
     font-size: 4rem;
 }
 
+.body{
+  padding-left: 40px;
+}
+
+.category-name{
+  font-size: 3rem;
+}
 .sns-name {
-    font-size: 3rem;
+    font-size: 2rem;
+}
+
+.user-content{
+  padding-left: 30px;
+}
+
+.user-content h2{
+  font-size: 2.5rem;
+}
+
+.user-sns>div {
+  padding-left: 20px;
+}
+
+.user-sns{
+  padding-left: 20px;
 }
 
 .posts {
@@ -31,12 +64,12 @@ ul {
 }
 
 .top-posts{
-    min-width: 7500px;
     display: flex;
+    width: fit-content;
 }
 
 .top-posts >li{
-    width: 250px;
+    width: 300px;
     overflow: hidden;
     height: 300px;
     margin-right: 10px;
@@ -69,12 +102,10 @@ ul {
 }
 
 .created_at {
+    margin-top: 15px;
     font-size: 14px;
     color: #8f8f8f;
     text-align: right;
-    position: absolute;
-    bottom: 10px;
-    right: 10px;
 }
 
 .post_photo{
